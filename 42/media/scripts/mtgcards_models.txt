@@ -33,6 +33,13 @@ model power_nine_binder
     scale = 0.08,
 }
 
+model LandBinder
+{
+    mesh = WorldItems/LandBinder,
+    texture = WorldItems/LandBinder,
+    scale = 0.08,
+}
+
 // Individual MTG Beta Cards
 
 model air-elemental-47

@@ -35,8 +35,8 @@ item complete_set_binder
 {
     DisplayCategory=MTG Binder,
     DisplayName=MTG Beta Complete Set Binder,
-    Capacity=350,
-    WeightReduction=80,
+    Capacity=5,
+    WeightReduction=90,
     Icon=base_binder,
     Weight=0.2,
     Type=Container,
@@ -51,13 +51,29 @@ item power_nine_binder
 {
     DisplayCategory=MTG Binder,
     DisplayName=MTG Power Nine Binder,
-    Capacity=15,
-    WeightReduction=80,
+    Capacity=5,
+    WeightReduction=90,
     Icon=power_nine_binder,
     Weight=0.2,
     Type=Container,
     WorldStaticModel=power_nine_binder,
     AcceptItemFunction=MTG_AcceptItemFunction.power_nine,
+    OpenSound=OpenBag,
+    CloseSound=CloseBag,
+    PutInSound=PutItemInBag,
+}
+
+item LandBinder
+{
+    DisplayCategory=MTG Binder,
+    DisplayName=MTG Land Binder,
+    Capacity=5,
+    WeightReduction=90,
+    Icon=LandBinder,
+    Weight=0.2,
+    Type=Container,
+    WorldStaticModel=LandBinder,
+    AcceptItemFunction=MTG_AcceptItemFunction.land_binder,
     OpenSound=OpenBag,
     CloseSound=CloseBag,
     PutInSound=PutItemInBag,
@@ -70,7 +86,7 @@ item air-elemental-47
     DisplayCategory=MTG Card,
     DisplayName=Air Elemental,
     Icon=air-elemental-47,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=air-elemental-47,
 }
@@ -80,7 +96,7 @@ item ancestral-recall-48
     DisplayCategory=MTG Card,
     DisplayName=Ancestral Recall,
     Icon=ancestral-recall-48,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=ancestral-recall-48,
 }
@@ -90,7 +106,7 @@ item animate-artifact-49
     DisplayCategory=MTG Card,
     DisplayName=Animate Artifact,
     Icon=animate-artifact-49,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=animate-artifact-49,
 }
@@ -100,7 +116,7 @@ item animate-dead-93
     DisplayCategory=MTG Card,
     DisplayName=Animate Dead,
     Icon=animate-dead-93,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=animate-dead-93,
 }
@@ -110,7 +126,7 @@ item animate-wall-1
     DisplayCategory=MTG Card,
     DisplayName=Animate Wall,
     Icon=animate-wall-1,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=animate-wall-1,
 }
@@ -120,7 +136,7 @@ item ankh-of-mishra-231
     DisplayCategory=MTG Card,
     DisplayName=Ankh of Mishra,
     Icon=ankh-of-mishra-231,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=ankh-of-mishra-231,
 }
@@ -130,7 +146,7 @@ item armageddon-2
     DisplayCategory=MTG Card,
     DisplayName=Armageddon,
     Icon=armageddon-2,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=armageddon-2,
 }
@@ -140,7 +156,7 @@ item aspect-of-wolf-185
     DisplayCategory=MTG Card,
     DisplayName=Aspect of Wolf,
     Icon=aspect-of-wolf-185,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=aspect-of-wolf-185,
 }
@@ -150,7 +166,7 @@ item bad-moon-94
     DisplayCategory=MTG Card,
     DisplayName=Bad Moon,
     Icon=bad-moon-94,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=bad-moon-94,
 }
@@ -160,7 +176,7 @@ item badlands-278
     DisplayCategory=MTG Card,
     DisplayName=Badlands,
     Icon=badlands-278,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=badlands-278,
 }
@@ -170,7 +186,7 @@ item balance-3
     DisplayCategory=MTG Card,
     DisplayName=Balance,
     Icon=balance-3,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=balance-3,
 }
@@ -180,7 +196,7 @@ item basalt-monolith-232
     DisplayCategory=MTG Card,
     DisplayName=Basalt Monolith,
     Icon=basalt-monolith-232,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=basalt-monolith-232,
 }
@@ -190,7 +206,7 @@ item bayou-279
     DisplayCategory=MTG Card,
     DisplayName=Bayou,
     Icon=bayou-279,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=bayou-279,
 }
@@ -200,7 +216,7 @@ item benalish-hero-4
     DisplayCategory=MTG Card,
     DisplayName=Benalish Hero,
     Icon=benalish-hero-4,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=benalish-hero-4,
 }
@@ -210,7 +226,7 @@ item berserk-186
     DisplayCategory=MTG Card,
     DisplayName=Berserk,
     Icon=berserk-186,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=berserk-186,
 }
@@ -220,7 +236,7 @@ item birds-of-paradise-187
     DisplayCategory=MTG Card,
     DisplayName=Birds of Paradise,
     Icon=birds-of-paradise-187,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=birds-of-paradise-187,
 }
@@ -230,7 +246,7 @@ item black-knight-95
     DisplayCategory=MTG Card,
     DisplayName=Black Knight,
     Icon=black-knight-95,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=black-knight-95,
 }
@@ -240,7 +256,7 @@ item black-lotus-233
     DisplayCategory=MTG Card,
     DisplayName=Black Lotus,
     Icon=black-lotus-233,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=black-lotus-233,
 }
@@ -250,7 +266,7 @@ item black-vise-234
     DisplayCategory=MTG Card,
     DisplayName=Black Vise,
     Icon=black-vise-234,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=black-vise-234,
 }
@@ -260,7 +276,7 @@ item black-ward-5
     DisplayCategory=MTG Card,
     DisplayName=Black Ward,
     Icon=black-ward-5,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=black-ward-5,
 }
@@ -270,7 +286,7 @@ item blaze-of-glory-6
     DisplayCategory=MTG Card,
     DisplayName=Blaze of Glory,
     Icon=blaze-of-glory-6,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=blaze-of-glory-6,
 }
@@ -280,7 +296,7 @@ item blessing-7
     DisplayCategory=MTG Card,
     DisplayName=Blessing,
     Icon=blessing-7,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=blessing-7,
 }
@@ -290,7 +306,7 @@ item blue-elemental-blast-50
     DisplayCategory=MTG Card,
     DisplayName=Blue Elemental Blast,
     Icon=blue-elemental-blast-50,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=blue-elemental-blast-50,
 }
@@ -300,7 +316,7 @@ item blue-ward-8
     DisplayCategory=MTG Card,
     DisplayName=Blue Ward,
     Icon=blue-ward-8,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=blue-ward-8,
 }
@@ -310,7 +326,7 @@ item bog-wraith-96
     DisplayCategory=MTG Card,
     DisplayName=Bog Wraith,
     Icon=bog-wraith-96,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=bog-wraith-96,
 }
@@ -320,7 +336,7 @@ item braingeyser-51
     DisplayCategory=MTG Card,
     DisplayName=Braingeyser,
     Icon=braingeyser-51,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=braingeyser-51,
 }
@@ -330,7 +346,7 @@ item burrowing-139
     DisplayCategory=MTG Card,
     DisplayName=Burrowing,
     Icon=burrowing-139,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=burrowing-139,
 }
@@ -340,7 +356,7 @@ item camouflage-188
     DisplayCategory=MTG Card,
     DisplayName=Camouflage,
     Icon=camouflage-188,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=camouflage-188,
 }
@@ -350,7 +366,7 @@ item castle-9
     DisplayCategory=MTG Card,
     DisplayName=Castle,
     Icon=castle-9,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=castle-9,
 }
@@ -360,7 +376,7 @@ item celestial-prism-235
     DisplayCategory=MTG Card,
     DisplayName=Celestial Prism,
     Icon=celestial-prism-235,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=celestial-prism-235,
 }
@@ -370,7 +386,7 @@ item channel-189
     DisplayCategory=MTG Card,
     DisplayName=Channel,
     Icon=channel-189,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=channel-189,
 }
@@ -380,7 +396,7 @@ item chaos-orb-236
     DisplayCategory=MTG Card,
     DisplayName=Chaos Orb,
     Icon=chaos-orb-236,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=chaos-orb-236,
 }
@@ -390,7 +406,7 @@ item chaoslace-140
     DisplayCategory=MTG Card,
     DisplayName=Chaoslace,
     Icon=chaoslace-140,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=chaoslace-140,
 }
@@ -400,7 +416,7 @@ item circle-of-protection-black-10
     DisplayCategory=MTG Card,
     DisplayName=Circle of Protection: Black,
     Icon=circle-of-protection-black-10,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=circle-of-protection-black-10,
 }
@@ -410,7 +426,7 @@ item circle-of-protection-blue-11
     DisplayCategory=MTG Card,
     DisplayName=Circle of Protection: Blue,
     Icon=circle-of-protection-blue-11,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=circle-of-protection-blue-11,
 }
@@ -420,7 +436,7 @@ item circle-of-protection-green-12
     DisplayCategory=MTG Card,
     DisplayName=Circle of Protection: Green,
     Icon=circle-of-protection-green-12,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=circle-of-protection-green-12,
 }
@@ -430,7 +446,7 @@ item circle-of-protection-red-13
     DisplayCategory=MTG Card,
     DisplayName=Circle of Protection: Red,
     Icon=circle-of-protection-red-13,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=circle-of-protection-red-13,
 }
@@ -440,7 +456,7 @@ item circle-of-protection-white-14
     DisplayCategory=MTG Card,
     DisplayName=Circle of Protection: White,
     Icon=circle-of-protection-white-14,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=circle-of-protection-white-14,
 }
@@ -450,7 +466,7 @@ item clockwork-beast-237
     DisplayCategory=MTG Card,
     DisplayName=Clockwork Beast,
     Icon=clockwork-beast-237,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=clockwork-beast-237,
 }
@@ -460,7 +476,7 @@ item clone-52
     DisplayCategory=MTG Card,
     DisplayName=Clone,
     Icon=clone-52,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=clone-52,
 }
@@ -470,7 +486,7 @@ item cockatrice-190
     DisplayCategory=MTG Card,
     DisplayName=Cockatrice,
     Icon=cockatrice-190,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=cockatrice-190,
 }
@@ -480,7 +496,7 @@ item consecrate-land-15
     DisplayCategory=MTG Card,
     DisplayName=Consecrate Land,
     Icon=consecrate-land-15,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=consecrate-land-15,
 }
@@ -490,7 +506,7 @@ item conservator-238
     DisplayCategory=MTG Card,
     DisplayName=Conservator,
     Icon=conservator-238,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=conservator-238,
 }
@@ -500,7 +516,7 @@ item contract-from-below-97
     DisplayCategory=MTG Card,
     DisplayName=Contract from Below,
     Icon=contract-from-below-97,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=contract-from-below-97,
 }
@@ -510,7 +526,7 @@ item control-magic-53
     DisplayCategory=MTG Card,
     DisplayName=Control Magic,
     Icon=control-magic-53,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=control-magic-53,
 }
@@ -520,7 +536,7 @@ item conversion-16
     DisplayCategory=MTG Card,
     DisplayName=Conversion,
     Icon=conversion-16,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=conversion-16,
 }
@@ -530,7 +546,7 @@ item copper-tablet-239
     DisplayCategory=MTG Card,
     DisplayName=Copper Tablet,
     Icon=copper-tablet-239,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=copper-tablet-239,
 }
@@ -540,7 +556,7 @@ item copy-artifact-54
     DisplayCategory=MTG Card,
     DisplayName=Copy Artifact,
     Icon=copy-artifact-54,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=copy-artifact-54,
 }
@@ -550,7 +566,7 @@ item counterspell-55
     DisplayCategory=MTG Card,
     DisplayName=Counterspell,
     Icon=counterspell-55,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=counterspell-55,
 }
@@ -560,7 +576,7 @@ item craw-wurm-191
     DisplayCategory=MTG Card,
     DisplayName=Craw Wurm,
     Icon=craw-wurm-191,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=craw-wurm-191,
 }
@@ -570,7 +586,7 @@ item creature-bond-56
     DisplayCategory=MTG Card,
     DisplayName=Creature Bond,
     Icon=creature-bond-56,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=creature-bond-56,
 }
@@ -580,7 +596,7 @@ item crusade-17
     DisplayCategory=MTG Card,
     DisplayName=Crusade,
     Icon=crusade-17,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=crusade-17,
 }
@@ -590,7 +606,7 @@ item crystal-rod-240
     DisplayCategory=MTG Card,
     DisplayName=Crystal Rod,
     Icon=crystal-rod-240,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=crystal-rod-240,
 }
@@ -600,7 +616,7 @@ item cursed-land-98
     DisplayCategory=MTG Card,
     DisplayName=Cursed Land,
     Icon=cursed-land-98,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=cursed-land-98,
 }
@@ -610,7 +626,7 @@ item cyclopean-tomb-241
     DisplayCategory=MTG Card,
     DisplayName=Cyclopean Tomb,
     Icon=cyclopean-tomb-241,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=cyclopean-tomb-241,
 }
@@ -620,7 +636,7 @@ item dark-ritual-99
     DisplayCategory=MTG Card,
     DisplayName=Dark Ritual,
     Icon=dark-ritual-99,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=dark-ritual-99,
 }
@@ -630,7 +646,7 @@ item darkpact-100
     DisplayCategory=MTG Card,
     DisplayName=Darkpact,
     Icon=darkpact-100,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=darkpact-100,
 }
@@ -640,7 +656,7 @@ item death-ward-18
     DisplayCategory=MTG Card,
     DisplayName=Death Ward,
     Icon=death-ward-18,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=death-ward-18,
 }
@@ -650,7 +666,7 @@ item deathgrip-101
     DisplayCategory=MTG Card,
     DisplayName=Deathgrip,
     Icon=deathgrip-101,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=deathgrip-101,
 }
@@ -660,7 +676,7 @@ item deathlace-102
     DisplayCategory=MTG Card,
     DisplayName=Deathlace,
     Icon=deathlace-102,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=deathlace-102,
 }
@@ -670,7 +686,7 @@ item demonic-attorney-103
     DisplayCategory=MTG Card,
     DisplayName=Demonic Attorney,
     Icon=demonic-attorney-103,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=demonic-attorney-103,
 }
@@ -680,7 +696,7 @@ item demonic-hordes-104
     DisplayCategory=MTG Card,
     DisplayName=Demonic Hordes,
     Icon=demonic-hordes-104,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=demonic-hordes-104,
 }
@@ -690,7 +706,7 @@ item demonic-tutor-105
     DisplayCategory=MTG Card,
     DisplayName=Demonic Tutor,
     Icon=demonic-tutor-105,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=demonic-tutor-105,
 }
@@ -700,7 +716,7 @@ item dingus-egg-242
     DisplayCategory=MTG Card,
     DisplayName=Dingus Egg,
     Icon=dingus-egg-242,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=dingus-egg-242,
 }
@@ -710,7 +726,7 @@ item disenchant-19
     DisplayCategory=MTG Card,
     DisplayName=Disenchant,
     Icon=disenchant-19,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=disenchant-19,
 }
@@ -720,7 +736,7 @@ item disintegrate-141
     DisplayCategory=MTG Card,
     DisplayName=Disintegrate,
     Icon=disintegrate-141,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=disintegrate-141,
 }
@@ -730,7 +746,7 @@ item disrupting-scepter-243
     DisplayCategory=MTG Card,
     DisplayName=Disrupting Scepter,
     Icon=disrupting-scepter-243,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=disrupting-scepter-243,
 }
@@ -740,7 +756,7 @@ item dragon-whelp-142
     DisplayCategory=MTG Card,
     DisplayName=Dragon Whelp,
     Icon=dragon-whelp-142,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=dragon-whelp-142,
 }
@@ -750,7 +766,7 @@ item drain-life-106
     DisplayCategory=MTG Card,
     DisplayName=Drain Life,
     Icon=drain-life-106,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=drain-life-106,
 }
@@ -760,7 +776,7 @@ item drain-power-57
     DisplayCategory=MTG Card,
     DisplayName=Drain Power,
     Icon=drain-power-57,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=drain-power-57,
 }
@@ -770,7 +786,7 @@ item drudge-skeletons-107
     DisplayCategory=MTG Card,
     DisplayName=Drudge Skeletons,
     Icon=drudge-skeletons-107,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=drudge-skeletons-107,
 }
@@ -780,7 +796,7 @@ item dwarven-demolition-team-143
     DisplayCategory=MTG Card,
     DisplayName=Dwarven Demolition Team,
     Icon=dwarven-demolition-team-143,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=dwarven-demolition-team-143,
 }
@@ -790,7 +806,7 @@ item dwarven-warriors-144
     DisplayCategory=MTG Card,
     DisplayName=Dwarven Warriors,
     Icon=dwarven-warriors-144,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=dwarven-warriors-144,
 }
@@ -800,7 +816,7 @@ item earth-elemental-145
     DisplayCategory=MTG Card,
     DisplayName=Earth Elemental,
     Icon=earth-elemental-145,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=earth-elemental-145,
 }
@@ -810,7 +826,7 @@ item earthbind-146
     DisplayCategory=MTG Card,
     DisplayName=Earthbind,
     Icon=earthbind-146,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=earthbind-146,
 }
@@ -820,7 +836,7 @@ item earthquake-147
     DisplayCategory=MTG Card,
     DisplayName=Earthquake,
     Icon=earthquake-147,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=earthquake-147,
 }
@@ -830,7 +846,7 @@ item elvish-archers-192
     DisplayCategory=MTG Card,
     DisplayName=Elvish Archers,
     Icon=elvish-archers-192,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=elvish-archers-192,
 }
@@ -840,7 +856,7 @@ item evil-presence-108
     DisplayCategory=MTG Card,
     DisplayName=Evil Presence,
     Icon=evil-presence-108,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=evil-presence-108,
 }
@@ -850,7 +866,7 @@ item false-orders-148
     DisplayCategory=MTG Card,
     DisplayName=False Orders,
     Icon=false-orders-148,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=false-orders-148,
 }
@@ -860,7 +876,7 @@ item farmstead-20
     DisplayCategory=MTG Card,
     DisplayName=Farmstead,
     Icon=farmstead-20,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=farmstead-20,
 }
@@ -870,7 +886,7 @@ item fastbond-193
     DisplayCategory=MTG Card,
     DisplayName=Fastbond,
     Icon=fastbond-193,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=fastbond-193,
 }
@@ -880,7 +896,7 @@ item fear-109
     DisplayCategory=MTG Card,
     DisplayName=Fear,
     Icon=fear-109,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=fear-109,
 }
@@ -890,7 +906,7 @@ item feedback-58
     DisplayCategory=MTG Card,
     DisplayName=Feedback,
     Icon=feedback-58,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=feedback-58,
 }
@@ -900,7 +916,7 @@ item fire-elemental-149
     DisplayCategory=MTG Card,
     DisplayName=Fire Elemental,
     Icon=fire-elemental-149,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=fire-elemental-149,
 }
@@ -910,7 +926,7 @@ item fireball-150
     DisplayCategory=MTG Card,
     DisplayName=Fireball,
     Icon=fireball-150,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=fireball-150,
 }
@@ -920,7 +936,7 @@ item firebreathing-151
     DisplayCategory=MTG Card,
     DisplayName=Firebreathing,
     Icon=firebreathing-151,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=firebreathing-151,
 }
@@ -930,7 +946,7 @@ item flashfires-152
     DisplayCategory=MTG Card,
     DisplayName=Flashfires,
     Icon=flashfires-152,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=flashfires-152,
 }
@@ -940,7 +956,7 @@ item flight-59
     DisplayCategory=MTG Card,
     DisplayName=Flight,
     Icon=flight-59,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=flight-59,
 }
@@ -950,7 +966,7 @@ item fog-194
     DisplayCategory=MTG Card,
     DisplayName=Fog,
     Icon=fog-194,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=fog-194,
 }
@@ -960,7 +976,7 @@ item force-of-nature-195
     DisplayCategory=MTG Card,
     DisplayName=Force of Nature,
     Icon=force-of-nature-195,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=force-of-nature-195,
 }
@@ -970,7 +986,7 @@ item forcefield-244
     DisplayCategory=MTG Card,
     DisplayName=Forcefield,
     Icon=forcefield-244,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=forcefield-244,
 }
@@ -980,7 +996,7 @@ item forest-300
     DisplayCategory=MTG Card,
     DisplayName=Forest,
     Icon=forest-300,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=forest-300,
 }
@@ -990,7 +1006,7 @@ item forest-301
     DisplayCategory=MTG Card,
     DisplayName=Forest,
     Icon=forest-301,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=forest-301,
 }
@@ -1000,7 +1016,7 @@ item forest-302
     DisplayCategory=MTG Card,
     DisplayName=Forest,
     Icon=forest-302,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=forest-302,
 }
@@ -1010,7 +1026,7 @@ item fork-153
     DisplayCategory=MTG Card,
     DisplayName=Fork,
     Icon=fork-153,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=fork-153,
 }
@@ -1020,7 +1036,7 @@ item frozen-shade-110
     DisplayCategory=MTG Card,
     DisplayName=Frozen Shade,
     Icon=frozen-shade-110,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=frozen-shade-110,
 }
@@ -1030,7 +1046,7 @@ item fungusaur-196
     DisplayCategory=MTG Card,
     DisplayName=Fungusaur,
     Icon=fungusaur-196,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=fungusaur-196,
 }
@@ -1040,7 +1056,7 @@ item gaeas-liege-197
     DisplayCategory=MTG Card,
     DisplayName=Gaea's Liege,
     Icon=gaeas-liege-197,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=gaeas-liege-197,
 }
@@ -1050,7 +1066,7 @@ item gauntlet-of-might-245
     DisplayCategory=MTG Card,
     DisplayName=Gauntlet of Might,
     Icon=gauntlet-of-might-245,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=gauntlet-of-might-245,
 }
@@ -1060,7 +1076,7 @@ item giant-growth-198
     DisplayCategory=MTG Card,
     DisplayName=Giant Growth,
     Icon=giant-growth-198,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=giant-growth-198,
 }
@@ -1070,7 +1086,7 @@ item giant-spider-199
     DisplayCategory=MTG Card,
     DisplayName=Giant Spider,
     Icon=giant-spider-199,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=giant-spider-199,
 }
@@ -1080,7 +1096,7 @@ item glasses-of-urza-246
     DisplayCategory=MTG Card,
     DisplayName=Glasses of Urza,
     Icon=glasses-of-urza-246,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=glasses-of-urza-246,
 }
@@ -1090,7 +1106,7 @@ item gloom-111
     DisplayCategory=MTG Card,
     DisplayName=Gloom,
     Icon=gloom-111,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=gloom-111,
 }
@@ -1100,7 +1116,7 @@ item goblin-balloon-brigade-154
     DisplayCategory=MTG Card,
     DisplayName=Goblin Balloon Brigade,
     Icon=goblin-balloon-brigade-154,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=goblin-balloon-brigade-154,
 }
@@ -1110,7 +1126,7 @@ item goblin-king-155
     DisplayCategory=MTG Card,
     DisplayName=Goblin King,
     Icon=goblin-king-155,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=goblin-king-155,
 }
@@ -1120,7 +1136,7 @@ item granite-gargoyle-156
     DisplayCategory=MTG Card,
     DisplayName=Granite Gargoyle,
     Icon=granite-gargoyle-156,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=granite-gargoyle-156,
 }
@@ -1130,7 +1146,7 @@ item gray-ogre-157
     DisplayCategory=MTG Card,
     DisplayName=Gray Ogre,
     Icon=gray-ogre-157,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=gray-ogre-157,
 }
@@ -1140,7 +1156,7 @@ item green-ward-21
     DisplayCategory=MTG Card,
     DisplayName=Green Ward,
     Icon=green-ward-21,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=green-ward-21,
 }
@@ -1150,7 +1166,7 @@ item grizzly-bears-200
     DisplayCategory=MTG Card,
     DisplayName=Grizzly Bears,
     Icon=grizzly-bears-200,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=grizzly-bears-200,
 }
@@ -1160,7 +1176,7 @@ item guardian-angel-22
     DisplayCategory=MTG Card,
     DisplayName=Guardian Angel,
     Icon=guardian-angel-22,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=guardian-angel-22,
 }
@@ -1170,7 +1186,7 @@ item healing-salve-23
     DisplayCategory=MTG Card,
     DisplayName=Healing Salve,
     Icon=healing-salve-23,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=healing-salve-23,
 }
@@ -1180,7 +1196,7 @@ item helm-of-chatzuk-247
     DisplayCategory=MTG Card,
     DisplayName=Helm of Chatzuk,
     Icon=helm-of-chatzuk-247,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=helm-of-chatzuk-247,
 }
@@ -1190,7 +1206,7 @@ item hill-giant-158
     DisplayCategory=MTG Card,
     DisplayName=Hill Giant,
     Icon=hill-giant-158,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=hill-giant-158,
 }
@@ -1200,7 +1216,7 @@ item holy-armor-24
     DisplayCategory=MTG Card,
     DisplayName=Holy Armor,
     Icon=holy-armor-24,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=holy-armor-24,
 }
@@ -1210,7 +1226,7 @@ item holy-strength-25
     DisplayCategory=MTG Card,
     DisplayName=Holy Strength,
     Icon=holy-strength-25,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=holy-strength-25,
 }
@@ -1220,7 +1236,7 @@ item howl-from-beyond-112
     DisplayCategory=MTG Card,
     DisplayName=Howl from Beyond,
     Icon=howl-from-beyond-112,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=howl-from-beyond-112,
 }
@@ -1230,7 +1246,7 @@ item howling-mine-248
     DisplayCategory=MTG Card,
     DisplayName=Howling Mine,
     Icon=howling-mine-248,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=howling-mine-248,
 }
@@ -1240,7 +1256,7 @@ item hurloon-minotaur-159
     DisplayCategory=MTG Card,
     DisplayName=Hurloon Minotaur,
     Icon=hurloon-minotaur-159,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=hurloon-minotaur-159,
 }
@@ -1250,7 +1266,7 @@ item hurricane-201
     DisplayCategory=MTG Card,
     DisplayName=Hurricane,
     Icon=hurricane-201,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=hurricane-201,
 }
@@ -1260,7 +1276,7 @@ item hypnotic-specter-113
     DisplayCategory=MTG Card,
     DisplayName=Hypnotic Specter,
     Icon=hypnotic-specter-113,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=hypnotic-specter-113,
 }
@@ -1270,7 +1286,7 @@ item ice-storm-202
     DisplayCategory=MTG Card,
     DisplayName=Ice Storm,
     Icon=ice-storm-202,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=ice-storm-202,
 }
@@ -1280,7 +1296,7 @@ item icy-manipulator-249
     DisplayCategory=MTG Card,
     DisplayName=Icy Manipulator,
     Icon=icy-manipulator-249,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=icy-manipulator-249,
 }
@@ -1290,7 +1306,7 @@ item illusionary-mask-250
     DisplayCategory=MTG Card,
     DisplayName=Illusionary Mask,
     Icon=illusionary-mask-250,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=illusionary-mask-250,
 }
@@ -1300,7 +1316,7 @@ item instill-energy-203
     DisplayCategory=MTG Card,
     DisplayName=Instill Energy,
     Icon=instill-energy-203,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=instill-energy-203,
 }
@@ -1310,7 +1326,7 @@ item invisibility-60
     DisplayCategory=MTG Card,
     DisplayName=Invisibility,
     Icon=invisibility-60,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=invisibility-60,
 }
@@ -1320,7 +1336,7 @@ item iron-star-251
     DisplayCategory=MTG Card,
     DisplayName=Iron Star,
     Icon=iron-star-251,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=iron-star-251,
 }
@@ -1330,7 +1346,7 @@ item ironclaw-orcs-160
     DisplayCategory=MTG Card,
     DisplayName=Ironclaw Orcs,
     Icon=ironclaw-orcs-160,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=ironclaw-orcs-160,
 }
@@ -1340,7 +1356,7 @@ item ironroot-treefolk-204
     DisplayCategory=MTG Card,
     DisplayName=Ironroot Treefolk,
     Icon=ironroot-treefolk-204,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=ironroot-treefolk-204,
 }
@@ -1350,7 +1366,7 @@ item island-291
     DisplayCategory=MTG Card,
     DisplayName=Island,
     Icon=island-291,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=island-291,
 }
@@ -1360,7 +1376,7 @@ item island-292
     DisplayCategory=MTG Card,
     DisplayName=Island,
     Icon=island-292,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=island-292,
 }
@@ -1370,7 +1386,7 @@ item island-293
     DisplayCategory=MTG Card,
     DisplayName=Island,
     Icon=island-293,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=island-293,
 }
@@ -1380,7 +1396,7 @@ item island-sanctuary-26
     DisplayCategory=MTG Card,
     DisplayName=Island Sanctuary,
     Icon=island-sanctuary-26,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=island-sanctuary-26,
 }
@@ -1390,7 +1406,7 @@ item ivory-cup-252
     DisplayCategory=MTG Card,
     DisplayName=Ivory Cup,
     Icon=ivory-cup-252,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=ivory-cup-252,
 }
@@ -1400,7 +1416,7 @@ item jade-monolith-253
     DisplayCategory=MTG Card,
     DisplayName=Jade Monolith,
     Icon=jade-monolith-253,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=jade-monolith-253,
 }
@@ -1410,7 +1426,7 @@ item jade-statue-254
     DisplayCategory=MTG Card,
     DisplayName=Jade Statue,
     Icon=jade-statue-254,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=jade-statue-254,
 }
@@ -1420,7 +1436,7 @@ item jayemdae-tome-255
     DisplayCategory=MTG Card,
     DisplayName=Jayemdae Tome,
     Icon=jayemdae-tome-255,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=jayemdae-tome-255,
 }
@@ -1430,7 +1446,7 @@ item juggernaut-256
     DisplayCategory=MTG Card,
     DisplayName=Juggernaut,
     Icon=juggernaut-256,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=juggernaut-256,
 }
@@ -1440,7 +1456,7 @@ item jump-61
     DisplayCategory=MTG Card,
     DisplayName=Jump,
     Icon=jump-61,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=jump-61,
 }
@@ -1450,7 +1466,7 @@ item karma-27
     DisplayCategory=MTG Card,
     DisplayName=Karma,
     Icon=karma-27,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=karma-27,
 }
@@ -1460,7 +1476,7 @@ item keldon-warlord-161
     DisplayCategory=MTG Card,
     DisplayName=Keldon Warlord,
     Icon=keldon-warlord-161,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=keldon-warlord-161,
 }
@@ -1470,7 +1486,7 @@ item kormus-bell-257
     DisplayCategory=MTG Card,
     DisplayName=Kormus Bell,
     Icon=kormus-bell-257,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=kormus-bell-257,
 }
@@ -1480,7 +1496,7 @@ item kudzu-205
     DisplayCategory=MTG Card,
     DisplayName=Kudzu,
     Icon=kudzu-205,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=kudzu-205,
 }
@@ -1490,7 +1506,7 @@ item lance-28
     DisplayCategory=MTG Card,
     DisplayName=Lance,
     Icon=lance-28,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=lance-28,
 }
@@ -1500,7 +1516,7 @@ item ley-druid-206
     DisplayCategory=MTG Card,
     DisplayName=Ley Druid,
     Icon=ley-druid-206,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=ley-druid-206,
 }
@@ -1510,7 +1526,7 @@ item library-of-leng-258
     DisplayCategory=MTG Card,
     DisplayName=Library of Leng,
     Icon=library-of-leng-258,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=library-of-leng-258,
 }
@@ -1520,7 +1536,7 @@ item lich-114
     DisplayCategory=MTG Card,
     DisplayName=Lich,
     Icon=lich-114,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=lich-114,
 }
@@ -1530,7 +1546,7 @@ item lifeforce-207
     DisplayCategory=MTG Card,
     DisplayName=Lifeforce,
     Icon=lifeforce-207,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=lifeforce-207,
 }
@@ -1540,7 +1556,7 @@ item lifelace-208
     DisplayCategory=MTG Card,
     DisplayName=Lifelace,
     Icon=lifelace-208,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=lifelace-208,
 }
@@ -1550,7 +1566,7 @@ item lifetap-62
     DisplayCategory=MTG Card,
     DisplayName=Lifetap,
     Icon=lifetap-62,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=lifetap-62,
 }
@@ -1560,7 +1576,7 @@ item lightning-bolt-162
     DisplayCategory=MTG Card,
     DisplayName=Lightning Bolt,
     Icon=lightning-bolt-162,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=lightning-bolt-162,
 }
@@ -1570,7 +1586,7 @@ item living-artifact-209
     DisplayCategory=MTG Card,
     DisplayName=Living Artifact,
     Icon=living-artifact-209,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=living-artifact-209,
 }
@@ -1580,7 +1596,7 @@ item living-lands-210
     DisplayCategory=MTG Card,
     DisplayName=Living Lands,
     Icon=living-lands-210,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=living-lands-210,
 }
@@ -1590,7 +1606,7 @@ item living-wall-259
     DisplayCategory=MTG Card,
     DisplayName=Living Wall,
     Icon=living-wall-259,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=living-wall-259,
 }
@@ -1600,7 +1616,7 @@ item llanowar-elves-211
     DisplayCategory=MTG Card,
     DisplayName=Llanowar Elves,
     Icon=llanowar-elves-211,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=llanowar-elves-211,
 }
@@ -1610,7 +1626,7 @@ item lord-of-atlantis-63
     DisplayCategory=MTG Card,
     DisplayName=Lord of Atlantis,
     Icon=lord-of-atlantis-63,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=lord-of-atlantis-63,
 }
@@ -1620,7 +1636,7 @@ item lord-of-the-pit-115
     DisplayCategory=MTG Card,
     DisplayName=Lord of the Pit,
     Icon=lord-of-the-pit-115,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=lord-of-the-pit-115,
 }
@@ -1630,7 +1646,7 @@ item lure-212
     DisplayCategory=MTG Card,
     DisplayName=Lure,
     Icon=lure-212,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=lure-212,
 }
@@ -1640,7 +1656,7 @@ item magical-hack-64
     DisplayCategory=MTG Card,
     DisplayName=Magical Hack,
     Icon=magical-hack-64,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=magical-hack-64,
 }
@@ -1650,7 +1666,7 @@ item mahamoti-djinn-65
     DisplayCategory=MTG Card,
     DisplayName=Mahamoti Djinn,
     Icon=mahamoti-djinn-65,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=mahamoti-djinn-65,
 }
@@ -1660,7 +1676,7 @@ item mana-flare-163
     DisplayCategory=MTG Card,
     DisplayName=Mana Flare,
     Icon=mana-flare-163,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=mana-flare-163,
 }
@@ -1670,7 +1686,7 @@ item mana-short-66
     DisplayCategory=MTG Card,
     DisplayName=Mana Short,
     Icon=mana-short-66,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=mana-short-66,
 }
@@ -1680,7 +1696,7 @@ item mana-vault-260
     DisplayCategory=MTG Card,
     DisplayName=Mana Vault,
     Icon=mana-vault-260,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=mana-vault-260,
 }
@@ -1690,7 +1706,7 @@ item manabarbs-164
     DisplayCategory=MTG Card,
     DisplayName=Manabarbs,
     Icon=manabarbs-164,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=manabarbs-164,
 }
@@ -1700,7 +1716,7 @@ item meekstone-261
     DisplayCategory=MTG Card,
     DisplayName=Meekstone,
     Icon=meekstone-261,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=meekstone-261,
 }
@@ -1710,7 +1726,7 @@ item merfolk-of-the-pearl-trident-67
     DisplayCategory=MTG Card,
     DisplayName=Merfolk of the Pearl Trident,
     Icon=merfolk-of-the-pearl-trident-67,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=merfolk-of-the-pearl-trident-67,
 }
@@ -1720,7 +1736,7 @@ item mesa-pegasus-29
     DisplayCategory=MTG Card,
     DisplayName=Mesa Pegasus,
     Icon=mesa-pegasus-29,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=mesa-pegasus-29,
 }
@@ -1730,7 +1746,7 @@ item mind-twist-116
     DisplayCategory=MTG Card,
     DisplayName=Mind Twist,
     Icon=mind-twist-116,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=mind-twist-116,
 }
@@ -1740,7 +1756,7 @@ item monss-goblin-raiders-165
     DisplayCategory=MTG Card,
     DisplayName=Mons's Goblin Raiders,
     Icon=monss-goblin-raiders-165,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=monss-goblin-raiders-165,
 }
@@ -1750,7 +1766,7 @@ item mountain-297
     DisplayCategory=MTG Card,
     DisplayName=Mountain,
     Icon=mountain-297,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=mountain-297,
 }
@@ -1760,7 +1776,7 @@ item mountain-298
     DisplayCategory=MTG Card,
     DisplayName=Mountain,
     Icon=mountain-298,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=mountain-298,
 }
@@ -1770,7 +1786,7 @@ item mountain-299
     DisplayCategory=MTG Card,
     DisplayName=Mountain,
     Icon=mountain-299,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=mountain-299,
 }
@@ -1780,7 +1796,7 @@ item mox-emerald-262
     DisplayCategory=MTG Card,
     DisplayName=Mox Emerald,
     Icon=mox-emerald-262,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=mox-emerald-262,
 }
@@ -1790,7 +1806,7 @@ item mox-jet-263
     DisplayCategory=MTG Card,
     DisplayName=Mox Jet,
     Icon=mox-jet-263,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=mox-jet-263,
 }
@@ -1800,7 +1816,7 @@ item mox-pearl-264
     DisplayCategory=MTG Card,
     DisplayName=Mox Pearl,
     Icon=mox-pearl-264,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=mox-pearl-264,
 }
@@ -1810,7 +1826,7 @@ item mox-ruby-265
     DisplayCategory=MTG Card,
     DisplayName=Mox Ruby,
     Icon=mox-ruby-265,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=mox-ruby-265,
 }
@@ -1820,7 +1836,7 @@ item mox-sapphire-266
     DisplayCategory=MTG Card,
     DisplayName=Mox Sapphire,
     Icon=mox-sapphire-266,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=mox-sapphire-266,
 }
@@ -1830,7 +1846,7 @@ item natural-selection-213
     DisplayCategory=MTG Card,
     DisplayName=Natural Selection,
     Icon=natural-selection-213,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=natural-selection-213,
 }
@@ -1840,7 +1856,7 @@ item nether-shadow-117
     DisplayCategory=MTG Card,
     DisplayName=Nether Shadow,
     Icon=nether-shadow-117,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=nether-shadow-117,
 }
@@ -1850,7 +1866,7 @@ item nettling-imp-118
     DisplayCategory=MTG Card,
     DisplayName=Nettling Imp,
     Icon=nettling-imp-118,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=nettling-imp-118,
 }
@@ -1860,7 +1876,7 @@ item nevinyrrals-disk-267
     DisplayCategory=MTG Card,
     DisplayName=Nevinyrral's Disk,
     Icon=nevinyrrals-disk-267,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=nevinyrrals-disk-267,
 }
@@ -1870,7 +1886,7 @@ item nightmare-119
     DisplayCategory=MTG Card,
     DisplayName=Nightmare,
     Icon=nightmare-119,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=nightmare-119,
 }
@@ -1880,7 +1896,7 @@ item northern-paladin-30
     DisplayCategory=MTG Card,
     DisplayName=Northern Paladin,
     Icon=northern-paladin-30,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=northern-paladin-30,
 }
@@ -1890,7 +1906,7 @@ item obsianus-golem-268
     DisplayCategory=MTG Card,
     DisplayName=Obsianus Golem,
     Icon=obsianus-golem-268,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=obsianus-golem-268,
 }
@@ -1900,7 +1916,7 @@ item orcish-artillery-166
     DisplayCategory=MTG Card,
     DisplayName=Orcish Artillery,
     Icon=orcish-artillery-166,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=orcish-artillery-166,
 }
@@ -1910,7 +1926,7 @@ item orcish-oriflamme-167
     DisplayCategory=MTG Card,
     DisplayName=Orcish Oriflamme,
     Icon=orcish-oriflamme-167,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=orcish-oriflamme-167,
 }
@@ -1920,7 +1936,7 @@ item paralyze-120
     DisplayCategory=MTG Card,
     DisplayName=Paralyze,
     Icon=paralyze-120,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=paralyze-120,
 }
@@ -1930,7 +1946,7 @@ item pearled-unicorn-31
     DisplayCategory=MTG Card,
     DisplayName=Pearled Unicorn,
     Icon=pearled-unicorn-31,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=pearled-unicorn-31,
 }
@@ -1940,7 +1956,7 @@ item personal-incarnation-32
     DisplayCategory=MTG Card,
     DisplayName=Personal Incarnation,
     Icon=personal-incarnation-32,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=personal-incarnation-32,
 }
@@ -1950,7 +1966,7 @@ item pestilence-121
     DisplayCategory=MTG Card,
     DisplayName=Pestilence,
     Icon=pestilence-121,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=pestilence-121,
 }
@@ -1960,7 +1976,7 @@ item phantasmal-forces-68
     DisplayCategory=MTG Card,
     DisplayName=Phantasmal Forces,
     Icon=phantasmal-forces-68,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=phantasmal-forces-68,
 }
@@ -1970,7 +1986,7 @@ item phantasmal-terrain-69
     DisplayCategory=MTG Card,
     DisplayName=Phantasmal Terrain,
     Icon=phantasmal-terrain-69,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=phantasmal-terrain-69,
 }
@@ -1980,7 +1996,7 @@ item phantom-monster-70
     DisplayCategory=MTG Card,
     DisplayName=Phantom Monster,
     Icon=phantom-monster-70,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=phantom-monster-70,
 }
@@ -1990,7 +2006,7 @@ item pirate-ship-71
     DisplayCategory=MTG Card,
     DisplayName=Pirate Ship,
     Icon=pirate-ship-71,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=pirate-ship-71,
 }
@@ -2000,7 +2016,7 @@ item plague-rats-122
     DisplayCategory=MTG Card,
     DisplayName=Plague Rats,
     Icon=plague-rats-122,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=plague-rats-122,
 }
@@ -2010,7 +2026,7 @@ item plains-288
     DisplayCategory=MTG Card,
     DisplayName=Plains,
     Icon=plains-288,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=plains-288,
 }
@@ -2020,7 +2036,7 @@ item plains-289
     DisplayCategory=MTG Card,
     DisplayName=Plains,
     Icon=plains-289,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=plains-289,
 }
@@ -2030,7 +2046,7 @@ item plains-290
     DisplayCategory=MTG Card,
     DisplayName=Plains,
     Icon=plains-290,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=plains-290,
 }
@@ -2040,7 +2056,7 @@ item plateau-280
     DisplayCategory=MTG Card,
     DisplayName=Plateau,
     Icon=plateau-280,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=plateau-280,
 }
@@ -2050,7 +2066,7 @@ item power-leak-72
     DisplayCategory=MTG Card,
     DisplayName=Power Leak,
     Icon=power-leak-72,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=power-leak-72,
 }
@@ -2060,7 +2076,7 @@ item power-sink-73
     DisplayCategory=MTG Card,
     DisplayName=Power Sink,
     Icon=power-sink-73,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=power-sink-73,
 }
@@ -2070,7 +2086,7 @@ item power-surge-168
     DisplayCategory=MTG Card,
     DisplayName=Power Surge,
     Icon=power-surge-168,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=power-surge-168,
 }
@@ -2080,7 +2096,7 @@ item prodigal-sorcerer-74
     DisplayCategory=MTG Card,
     DisplayName=Prodigal Sorcerer,
     Icon=prodigal-sorcerer-74,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=prodigal-sorcerer-74,
 }
@@ -2090,7 +2106,7 @@ item psionic-blast-75
     DisplayCategory=MTG Card,
     DisplayName=Psionic Blast,
     Icon=psionic-blast-75,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=psionic-blast-75,
 }
@@ -2100,7 +2116,7 @@ item psychic-venom-76
     DisplayCategory=MTG Card,
     DisplayName=Psychic Venom,
     Icon=psychic-venom-76,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=psychic-venom-76,
 }
@@ -2110,7 +2126,7 @@ item purelace-33
     DisplayCategory=MTG Card,
     DisplayName=Purelace,
     Icon=purelace-33,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=purelace-33,
 }
@@ -2120,7 +2136,7 @@ item raging-river-169
     DisplayCategory=MTG Card,
     DisplayName=Raging River,
     Icon=raging-river-169,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=raging-river-169,
 }
@@ -2130,7 +2146,7 @@ item raise-dead-123
     DisplayCategory=MTG Card,
     DisplayName=Raise Dead,
     Icon=raise-dead-123,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=raise-dead-123,
 }
@@ -2140,7 +2156,7 @@ item red-elemental-blast-170
     DisplayCategory=MTG Card,
     DisplayName=Red Elemental Blast,
     Icon=red-elemental-blast-170,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=red-elemental-blast-170,
 }
@@ -2150,7 +2166,7 @@ item red-ward-34
     DisplayCategory=MTG Card,
     DisplayName=Red Ward,
     Icon=red-ward-34,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=red-ward-34,
 }
@@ -2160,7 +2176,7 @@ item regeneration-214
     DisplayCategory=MTG Card,
     DisplayName=Regeneration,
     Icon=regeneration-214,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=regeneration-214,
 }
@@ -2170,7 +2186,7 @@ item regrowth-215
     DisplayCategory=MTG Card,
     DisplayName=Regrowth,
     Icon=regrowth-215,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=regrowth-215,
 }
@@ -2180,7 +2196,7 @@ item resurrection-35
     DisplayCategory=MTG Card,
     DisplayName=Resurrection,
     Icon=resurrection-35,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=resurrection-35,
 }
@@ -2190,7 +2206,7 @@ item reverse-damage-36
     DisplayCategory=MTG Card,
     DisplayName=Reverse Damage,
     Icon=reverse-damage-36,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=reverse-damage-36,
 }
@@ -2200,7 +2216,7 @@ item righteousness-37
     DisplayCategory=MTG Card,
     DisplayName=Righteousness,
     Icon=righteousness-37,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=righteousness-37,
 }
@@ -2210,7 +2226,7 @@ item roc-of-kher-ridges-171
     DisplayCategory=MTG Card,
     DisplayName=Roc of Kher Ridges,
     Icon=roc-of-kher-ridges-171,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=roc-of-kher-ridges-171,
 }
@@ -2220,7 +2236,7 @@ item rock-hydra-172
     DisplayCategory=MTG Card,
     DisplayName=Rock Hydra,
     Icon=rock-hydra-172,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=rock-hydra-172,
 }
@@ -2230,7 +2246,7 @@ item rod-of-ruin-269
     DisplayCategory=MTG Card,
     DisplayName=Rod of Ruin,
     Icon=rod-of-ruin-269,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=rod-of-ruin-269,
 }
@@ -2240,7 +2256,7 @@ item royal-assassin-124
     DisplayCategory=MTG Card,
     DisplayName=Royal Assassin,
     Icon=royal-assassin-124,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=royal-assassin-124,
 }
@@ -2250,7 +2266,7 @@ item sacrifice-125
     DisplayCategory=MTG Card,
     DisplayName=Sacrifice,
     Icon=sacrifice-125,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=sacrifice-125,
 }
@@ -2260,7 +2276,7 @@ item samite-healer-38
     DisplayCategory=MTG Card,
     DisplayName=Samite Healer,
     Icon=samite-healer-38,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=samite-healer-38,
 }
@@ -2270,7 +2286,7 @@ item savannah-281
     DisplayCategory=MTG Card,
     DisplayName=Savannah,
     Icon=savannah-281,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=savannah-281,
 }
@@ -2280,7 +2296,7 @@ item savannah-lions-39
     DisplayCategory=MTG Card,
     DisplayName=Savannah Lions,
     Icon=savannah-lions-39,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=savannah-lions-39,
 }
@@ -2290,7 +2306,7 @@ item scathe-zombies-126
     DisplayCategory=MTG Card,
     DisplayName=Scathe Zombies,
     Icon=scathe-zombies-126,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=scathe-zombies-126,
 }
@@ -2300,7 +2316,7 @@ item scavenging-ghoul-127
     DisplayCategory=MTG Card,
     DisplayName=Scavenging Ghoul,
     Icon=scavenging-ghoul-127,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=scavenging-ghoul-127,
 }
@@ -2310,7 +2326,7 @@ item scrubland-282
     DisplayCategory=MTG Card,
     DisplayName=Scrubland,
     Icon=scrubland-282,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=scrubland-282,
 }
@@ -2320,7 +2336,7 @@ item scryb-sprites-216
     DisplayCategory=MTG Card,
     DisplayName=Scryb Sprites,
     Icon=scryb-sprites-216,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=scryb-sprites-216,
 }
@@ -2330,7 +2346,7 @@ item sea-serpent-77
     DisplayCategory=MTG Card,
     DisplayName=Sea Serpent,
     Icon=sea-serpent-77,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=sea-serpent-77,
 }
@@ -2340,7 +2356,7 @@ item sedge-troll-173
     DisplayCategory=MTG Card,
     DisplayName=Sedge Troll,
     Icon=sedge-troll-173,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=sedge-troll-173,
 }
@@ -2350,7 +2366,7 @@ item sengir-vampire-128
     DisplayCategory=MTG Card,
     DisplayName=Sengir Vampire,
     Icon=sengir-vampire-128,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=sengir-vampire-128,
 }
@@ -2360,7 +2376,7 @@ item serra-angel-40
     DisplayCategory=MTG Card,
     DisplayName=Serra Angel,
     Icon=serra-angel-40,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=serra-angel-40,
 }
@@ -2370,7 +2386,7 @@ item shanodin-dryads-217
     DisplayCategory=MTG Card,
     DisplayName=Shanodin Dryads,
     Icon=shanodin-dryads-217,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=shanodin-dryads-217,
 }
@@ -2380,7 +2396,7 @@ item shatter-174
     DisplayCategory=MTG Card,
     DisplayName=Shatter,
     Icon=shatter-174,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=shatter-174,
 }
@@ -2390,7 +2406,7 @@ item shivan-dragon-175
     DisplayCategory=MTG Card,
     DisplayName=Shivan Dragon,
     Icon=shivan-dragon-175,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=shivan-dragon-175,
 }
@@ -2400,7 +2416,7 @@ item simulacrum-129
     DisplayCategory=MTG Card,
     DisplayName=Simulacrum,
     Icon=simulacrum-129,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=simulacrum-129,
 }
@@ -2410,7 +2426,7 @@ item sinkhole-130
     DisplayCategory=MTG Card,
     DisplayName=Sinkhole,
     Icon=sinkhole-130,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=sinkhole-130,
 }
@@ -2420,7 +2436,7 @@ item sirens-call-78
     DisplayCategory=MTG Card,
     DisplayName=Siren's Call,
     Icon=sirens-call-78,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=sirens-call-78,
 }
@@ -2430,7 +2446,7 @@ item sleight-of-mind-79
     DisplayCategory=MTG Card,
     DisplayName=Sleight of Mind,
     Icon=sleight-of-mind-79,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=sleight-of-mind-79,
 }
@@ -2440,7 +2456,7 @@ item smoke-176
     DisplayCategory=MTG Card,
     DisplayName=Smoke,
     Icon=smoke-176,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=smoke-176,
 }
@@ -2450,7 +2466,7 @@ item sol-ring-270
     DisplayCategory=MTG Card,
     DisplayName=Sol Ring,
     Icon=sol-ring-270,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=sol-ring-270,
 }
@@ -2460,7 +2476,7 @@ item soul-net-271
     DisplayCategory=MTG Card,
     DisplayName=Soul Net,
     Icon=soul-net-271,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=soul-net-271,
 }
@@ -2470,7 +2486,7 @@ item spell-blast-80
     DisplayCategory=MTG Card,
     DisplayName=Spell Blast,
     Icon=spell-blast-80,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=spell-blast-80,
 }
@@ -2480,7 +2496,7 @@ item stasis-81
     DisplayCategory=MTG Card,
     DisplayName=Stasis,
     Icon=stasis-81,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=stasis-81,
 }
@@ -2490,7 +2506,7 @@ item steal-artifact-82
     DisplayCategory=MTG Card,
     DisplayName=Steal Artifact,
     Icon=steal-artifact-82,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=steal-artifact-82,
 }
@@ -2500,7 +2516,7 @@ item stone-giant-177
     DisplayCategory=MTG Card,
     DisplayName=Stone Giant,
     Icon=stone-giant-177,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=stone-giant-177,
 }
@@ -2510,7 +2526,7 @@ item stone-rain-178
     DisplayCategory=MTG Card,
     DisplayName=Stone Rain,
     Icon=stone-rain-178,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=stone-rain-178,
 }
@@ -2520,7 +2536,7 @@ item stream-of-life-218
     DisplayCategory=MTG Card,
     DisplayName=Stream of Life,
     Icon=stream-of-life-218,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=stream-of-life-218,
 }
@@ -2530,7 +2546,7 @@ item sunglasses-of-urza-272
     DisplayCategory=MTG Card,
     DisplayName=Sunglasses of Urza,
     Icon=sunglasses-of-urza-272,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=sunglasses-of-urza-272,
 }
@@ -2540,7 +2556,7 @@ item swamp-294
     DisplayCategory=MTG Card,
     DisplayName=Swamp,
     Icon=swamp-294,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=swamp-294,
 }
@@ -2550,7 +2566,7 @@ item swamp-295
     DisplayCategory=MTG Card,
     DisplayName=Swamp,
     Icon=swamp-295,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=swamp-295,
 }
@@ -2560,7 +2576,7 @@ item swamp-296
     DisplayCategory=MTG Card,
     DisplayName=Swamp,
     Icon=swamp-296,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=swamp-296,
 }
@@ -2570,7 +2586,7 @@ item swords-to-plowshares-41
     DisplayCategory=MTG Card,
     DisplayName=Swords to Plowshares,
     Icon=swords-to-plowshares-41,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=swords-to-plowshares-41,
 }
@@ -2580,7 +2596,7 @@ item taiga-283
     DisplayCategory=MTG Card,
     DisplayName=Taiga,
     Icon=taiga-283,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=taiga-283,
 }
@@ -2590,7 +2606,7 @@ item terror-131
     DisplayCategory=MTG Card,
     DisplayName=Terror,
     Icon=terror-131,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=terror-131,
 }
@@ -2600,7 +2616,7 @@ item the-hive-273
     DisplayCategory=MTG Card,
     DisplayName=The Hive,
     Icon=the-hive-273,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=the-hive-273,
 }
@@ -2610,7 +2626,7 @@ item thicket-basilisk-219
     DisplayCategory=MTG Card,
     DisplayName=Thicket Basilisk,
     Icon=thicket-basilisk-219,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=thicket-basilisk-219,
 }
@@ -2620,7 +2636,7 @@ item thoughtlace-83
     DisplayCategory=MTG Card,
     DisplayName=Thoughtlace,
     Icon=thoughtlace-83,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=thoughtlace-83,
 }
@@ -2630,7 +2646,7 @@ item throne-of-bone-274
     DisplayCategory=MTG Card,
     DisplayName=Throne of Bone,
     Icon=throne-of-bone-274,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=throne-of-bone-274,
 }
@@ -2640,7 +2656,7 @@ item timber-wolves-220
     DisplayCategory=MTG Card,
     DisplayName=Timber Wolves,
     Icon=timber-wolves-220,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=timber-wolves-220,
 }
@@ -2650,7 +2666,7 @@ item time-vault-275
     DisplayCategory=MTG Card,
     DisplayName=Time Vault,
     Icon=time-vault-275,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=time-vault-275,
 }
@@ -2660,7 +2676,7 @@ item time-walk-84
     DisplayCategory=MTG Card,
     DisplayName=Time Walk,
     Icon=time-walk-84,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=time-walk-84,
 }
@@ -2670,7 +2686,7 @@ item timetwister-85
     DisplayCategory=MTG Card,
     DisplayName=Timetwister,
     Icon=timetwister-85,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=timetwister-85,
 }
@@ -2680,7 +2696,7 @@ item tranquility-221
     DisplayCategory=MTG Card,
     DisplayName=Tranquility,
     Icon=tranquility-221,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=tranquility-221,
 }
@@ -2690,7 +2706,7 @@ item tropical-island-284
     DisplayCategory=MTG Card,
     DisplayName=Tropical Island,
     Icon=tropical-island-284,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=tropical-island-284,
 }
@@ -2700,7 +2716,7 @@ item tsunami-222
     DisplayCategory=MTG Card,
     DisplayName=Tsunami,
     Icon=tsunami-222,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=tsunami-222,
 }
@@ -2710,7 +2726,7 @@ item tundra-285
     DisplayCategory=MTG Card,
     DisplayName=Tundra,
     Icon=tundra-285,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=tundra-285,
 }
@@ -2720,7 +2736,7 @@ item tunnel-179
     DisplayCategory=MTG Card,
     DisplayName=Tunnel,
     Icon=tunnel-179,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=tunnel-179,
 }
@@ -2730,7 +2746,7 @@ item twiddle-86
     DisplayCategory=MTG Card,
     DisplayName=Twiddle,
     Icon=twiddle-86,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=twiddle-86,
 }
@@ -2740,7 +2756,7 @@ item two-headed-giant-of-foriys-180
     DisplayCategory=MTG Card,
     DisplayName=Two-Headed Giant of Foriys,
     Icon=two-headed-giant-of-foriys-180,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=two-headed-giant-of-foriys-180,
 }
@@ -2750,7 +2766,7 @@ item underground-sea-286
     DisplayCategory=MTG Card,
     DisplayName=Underground Sea,
     Icon=underground-sea-286,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=underground-sea-286,
 }
@@ -2760,7 +2776,7 @@ item unholy-strength-132
     DisplayCategory=MTG Card,
     DisplayName=Unholy Strength,
     Icon=unholy-strength-132,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=unholy-strength-132,
 }
@@ -2770,7 +2786,7 @@ item unsummon-87
     DisplayCategory=MTG Card,
     DisplayName=Unsummon,
     Icon=unsummon-87,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=unsummon-87,
 }
@@ -2780,7 +2796,7 @@ item uthden-troll-181
     DisplayCategory=MTG Card,
     DisplayName=Uthden Troll,
     Icon=uthden-troll-181,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=uthden-troll-181,
 }
@@ -2790,7 +2806,7 @@ item verduran-enchantress-223
     DisplayCategory=MTG Card,
     DisplayName=Verduran Enchantress,
     Icon=verduran-enchantress-223,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=verduran-enchantress-223,
 }
@@ -2800,7 +2816,7 @@ item vesuvan-doppelganger-88
     DisplayCategory=MTG Card,
     DisplayName=Vesuvan Doppelganger,
     Icon=vesuvan-doppelganger-88,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=vesuvan-doppelganger-88,
 }
@@ -2810,7 +2826,7 @@ item veteran-bodyguard-42
     DisplayCategory=MTG Card,
     DisplayName=Veteran Bodyguard,
     Icon=veteran-bodyguard-42,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=veteran-bodyguard-42,
 }
@@ -2820,7 +2836,7 @@ item volcanic-eruption-89
     DisplayCategory=MTG Card,
     DisplayName=Volcanic Eruption,
     Icon=volcanic-eruption-89,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=volcanic-eruption-89,
 }
@@ -2830,7 +2846,7 @@ item volcanic-island-287
     DisplayCategory=MTG Card,
     DisplayName=Volcanic Island,
     Icon=volcanic-island-287,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=volcanic-island-287,
 }
@@ -2840,7 +2856,7 @@ item wall-of-air-90
     DisplayCategory=MTG Card,
     DisplayName=Wall of Air,
     Icon=wall-of-air-90,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=wall-of-air-90,
 }
@@ -2850,7 +2866,7 @@ item wall-of-bone-133
     DisplayCategory=MTG Card,
     DisplayName=Wall of Bone,
     Icon=wall-of-bone-133,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=wall-of-bone-133,
 }
@@ -2860,7 +2876,7 @@ item wall-of-brambles-224
     DisplayCategory=MTG Card,
     DisplayName=Wall of Brambles,
     Icon=wall-of-brambles-224,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=wall-of-brambles-224,
 }
@@ -2870,7 +2886,7 @@ item wall-of-fire-182
     DisplayCategory=MTG Card,
     DisplayName=Wall of Fire,
     Icon=wall-of-fire-182,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=wall-of-fire-182,
 }
@@ -2880,7 +2896,7 @@ item wall-of-ice-225
     DisplayCategory=MTG Card,
     DisplayName=Wall of Ice,
     Icon=wall-of-ice-225,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=wall-of-ice-225,
 }
@@ -2890,7 +2906,7 @@ item wall-of-stone-183
     DisplayCategory=MTG Card,
     DisplayName=Wall of Stone,
     Icon=wall-of-stone-183,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=wall-of-stone-183,
 }
@@ -2900,7 +2916,7 @@ item wall-of-swords-43
     DisplayCategory=MTG Card,
     DisplayName=Wall of Swords,
     Icon=wall-of-swords-43,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=wall-of-swords-43,
 }
@@ -2910,7 +2926,7 @@ item wall-of-water-91
     DisplayCategory=MTG Card,
     DisplayName=Wall of Water,
     Icon=wall-of-water-91,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=wall-of-water-91,
 }
@@ -2920,7 +2936,7 @@ item wall-of-wood-226
     DisplayCategory=MTG Card,
     DisplayName=Wall of Wood,
     Icon=wall-of-wood-226,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=wall-of-wood-226,
 }
@@ -2930,7 +2946,7 @@ item wanderlust-227
     DisplayCategory=MTG Card,
     DisplayName=Wanderlust,
     Icon=wanderlust-227,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=wanderlust-227,
 }
@@ -2940,7 +2956,7 @@ item war-mammoth-228
     DisplayCategory=MTG Card,
     DisplayName=War Mammoth,
     Icon=war-mammoth-228,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=war-mammoth-228,
 }
@@ -2950,7 +2966,7 @@ item warp-artifact-134
     DisplayCategory=MTG Card,
     DisplayName=Warp Artifact,
     Icon=warp-artifact-134,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=warp-artifact-134,
 }
@@ -2960,7 +2976,7 @@ item water-elemental-92
     DisplayCategory=MTG Card,
     DisplayName=Water Elemental,
     Icon=water-elemental-92,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=water-elemental-92,
 }
@@ -2970,7 +2986,7 @@ item weakness-135
     DisplayCategory=MTG Card,
     DisplayName=Weakness,
     Icon=weakness-135,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=weakness-135,
 }
@@ -2980,7 +2996,7 @@ item web-229
     DisplayCategory=MTG Card,
     DisplayName=Web,
     Icon=web-229,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=web-229,
 }
@@ -2990,7 +3006,7 @@ item wheel-of-fortune-184
     DisplayCategory=MTG Card,
     DisplayName=Wheel of Fortune,
     Icon=wheel-of-fortune-184,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=wheel-of-fortune-184,
 }
@@ -3000,7 +3016,7 @@ item white-knight-44
     DisplayCategory=MTG Card,
     DisplayName=White Knight,
     Icon=white-knight-44,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=white-knight-44,
 }
@@ -3010,7 +3026,7 @@ item white-ward-45
     DisplayCategory=MTG Card,
     DisplayName=White Ward,
     Icon=white-ward-45,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=white-ward-45,
 }
@@ -3020,7 +3036,7 @@ item wild-growth-230
     DisplayCategory=MTG Card,
     DisplayName=Wild Growth,
     Icon=wild-growth-230,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=wild-growth-230,
 }
@@ -3030,7 +3046,7 @@ item will-o-the-wisp-136
     DisplayCategory=MTG Card,
     DisplayName=Will-o'-the-Wisp,
     Icon=will-o-the-wisp-136,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=will-o-the-wisp-136,
 }
@@ -3040,7 +3056,7 @@ item winter-orb-276
     DisplayCategory=MTG Card,
     DisplayName=Winter Orb,
     Icon=winter-orb-276,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=winter-orb-276,
 }
@@ -3050,7 +3066,7 @@ item wooden-sphere-277
     DisplayCategory=MTG Card,
     DisplayName=Wooden Sphere,
     Icon=wooden-sphere-277,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=wooden-sphere-277,
 }
@@ -3060,7 +3076,7 @@ item word-of-command-137
     DisplayCategory=MTG Card,
     DisplayName=Word of Command,
     Icon=word-of-command-137,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=word-of-command-137,
 }
@@ -3070,7 +3086,7 @@ item wrath-of-god-46
     DisplayCategory=MTG Card,
     DisplayName=Wrath of God,
     Icon=wrath-of-god-46,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=wrath-of-god-46,
 }
@@ -3080,7 +3096,7 @@ item zombie-master-138
     DisplayCategory=MTG Card,
     DisplayName=Zombie Master,
     Icon=zombie-master-138,
-    Weight=0.001,
+    Weight=0.01,
     Type=Normal,
     WorldStaticModel=zombie-master-138,
 }
