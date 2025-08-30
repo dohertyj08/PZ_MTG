@@ -1,0 +1,40 @@
+module mtgcards
+{
+imports
+{
+Base
+}
+
+craftRecipe Open Beta Booster Pack
+{
+    OnCreate = open_booster_pack_beta,
+    Time = 0,
+    Category = Cooking,
+    CanWalk = true,
+    Tags = InHandCraft;Cooking,
+    inputs
+    {
+        item 1 [mtgcards.booster_pack_beta] mode:destroy,
+    }
+    outputs
+    {
+    }
+}
+
+craftRecipe Open Beta Starter Deck
+{
+    OnCreate = open_starter_deck_beta,
+    Time = 0,
+    Category = Cooking,
+    CanWalk = true,
+    Tags = InHandCraft;Cooking,
+    inputs
+    {
+        item 1 [mtgcards.starter_deck_beta] mode:destroy,
+    }
+    outputs
+    {
+    }
+}
+
+}

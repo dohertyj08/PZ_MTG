@@ -1,0 +1,24 @@
+VERSION = 1,
+option MTG.enableMod
+{
+	type = boolean, default = true,
+	page = MTG, translation = MTG_enableMod,
+}
+
+option MTG.ZombieDrops
+{
+	type = boolean, default = false,
+	page = MTG, translation = MTG_ZombieDrops,
+}
+
+option MTG.ZombieDropRate
+{
+	type = double, default = 0.5, min = 0.1, max = 100,
+	page = MTG, translation = MTG_ZombieDropRate,
+}
+
+option MTG.spawnRate
+{
+	type = double, default = 1, min = 0.1, max = 100,
+	page = MTG, translation = MTG_spawnRate,
+}

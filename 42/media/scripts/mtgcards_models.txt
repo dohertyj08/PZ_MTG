@@ -1,0 +1,2152 @@
+module mtgcards
+{
+imports
+{
+Base
+}
+
+model base_pack
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_base_pack,
+    scale = 0.27,
+}
+
+model base_deck
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_base_pack,
+    scale = 0.27,
+}
+
+model base_binder
+{
+    mesh = WorldItems/Binder,
+    texture = WorldItems/Binder,
+    scale = 0.08,
+}
+
+model power_nine_binder
+{
+    mesh = WorldItems/PowerNineBinder,
+    texture = WorldItems/PowerNineBinder,
+    scale = 0.08,
+}
+
+// Individual MTG Beta Cards
+
+model air-elemental-47
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_air-elemental-47,
+    scale = 0.27,
+}
+
+model ancestral-recall-48
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_ancestral-recall-48,
+    scale = 0.27,
+}
+
+model animate-artifact-49
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_animate-artifact-49,
+    scale = 0.27,
+}
+
+model animate-dead-93
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_animate-dead-93,
+    scale = 0.27,
+}
+
+model animate-wall-1
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_animate-wall-1,
+    scale = 0.27,
+}
+
+model ankh-of-mishra-231
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_ankh-of-mishra-231,
+    scale = 0.27,
+}
+
+model armageddon-2
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_armageddon-2,
+    scale = 0.27,
+}
+
+model aspect-of-wolf-185
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_aspect-of-wolf-185,
+    scale = 0.27,
+}
+
+model bad-moon-94
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_bad-moon-94,
+    scale = 0.27,
+}
+
+model badlands-278
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_badlands-278,
+    scale = 0.27,
+}
+
+model balance-3
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_balance-3,
+    scale = 0.27,
+}
+
+model basalt-monolith-232
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_basalt-monolith-232,
+    scale = 0.27,
+}
+
+model bayou-279
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_bayou-279,
+    scale = 0.27,
+}
+
+model benalish-hero-4
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_benalish-hero-4,
+    scale = 0.27,
+}
+
+model berserk-186
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_berserk-186,
+    scale = 0.27,
+}
+
+model birds-of-paradise-187
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_birds-of-paradise-187,
+    scale = 0.27,
+}
+
+model black-knight-95
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_black-knight-95,
+    scale = 0.27,
+}
+
+model black-lotus-233
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_black-lotus-233,
+    scale = 0.27,
+}
+
+model black-vise-234
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_black-vise-234,
+    scale = 0.27,
+}
+
+model black-ward-5
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_black-ward-5,
+    scale = 0.27,
+}
+
+model blaze-of-glory-6
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_blaze-of-glory-6,
+    scale = 0.27,
+}
+
+model blessing-7
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_blessing-7,
+    scale = 0.27,
+}
+
+model blue-elemental-blast-50
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_blue-elemental-blast-50,
+    scale = 0.27,
+}
+
+model blue-ward-8
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_blue-ward-8,
+    scale = 0.27,
+}
+
+model bog-wraith-96
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_bog-wraith-96,
+    scale = 0.27,
+}
+
+model braingeyser-51
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_braingeyser-51,
+    scale = 0.27,
+}
+
+model burrowing-139
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_burrowing-139,
+    scale = 0.27,
+}
+
+model camouflage-188
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_camouflage-188,
+    scale = 0.27,
+}
+
+model castle-9
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_castle-9,
+    scale = 0.27,
+}
+
+model celestial-prism-235
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_celestial-prism-235,
+    scale = 0.27,
+}
+
+model channel-189
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_channel-189,
+    scale = 0.27,
+}
+
+model chaos-orb-236
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_chaos-orb-236,
+    scale = 0.27,
+}
+
+model chaoslace-140
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_chaoslace-140,
+    scale = 0.27,
+}
+
+model circle-of-protection-black-10
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_circle-of-protection-black-10,
+    scale = 0.27,
+}
+
+model circle-of-protection-blue-11
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_circle-of-protection-blue-11,
+    scale = 0.27,
+}
+
+model circle-of-protection-green-12
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_circle-of-protection-green-12,
+    scale = 0.27,
+}
+
+model circle-of-protection-red-13
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_circle-of-protection-red-13,
+    scale = 0.27,
+}
+
+model circle-of-protection-white-14
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_circle-of-protection-white-14,
+    scale = 0.27,
+}
+
+model clockwork-beast-237
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_clockwork-beast-237,
+    scale = 0.27,
+}
+
+model clone-52
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_clone-52,
+    scale = 0.27,
+}
+
+model cockatrice-190
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_cockatrice-190,
+    scale = 0.27,
+}
+
+model consecrate-land-15
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_consecrate-land-15,
+    scale = 0.27,
+}
+
+model conservator-238
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_conservator-238,
+    scale = 0.27,
+}
+
+model contract-from-below-97
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_contract-from-below-97,
+    scale = 0.27,
+}
+
+model control-magic-53
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_control-magic-53,
+    scale = 0.27,
+}
+
+model conversion-16
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_conversion-16,
+    scale = 0.27,
+}
+
+model copper-tablet-239
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_copper-tablet-239,
+    scale = 0.27,
+}
+
+model copy-artifact-54
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_copy-artifact-54,
+    scale = 0.27,
+}
+
+model counterspell-55
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_counterspell-55,
+    scale = 0.27,
+}
+
+model craw-wurm-191
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_craw-wurm-191,
+    scale = 0.27,
+}
+
+model creature-bond-56
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_creature-bond-56,
+    scale = 0.27,
+}
+
+model crusade-17
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_crusade-17,
+    scale = 0.27,
+}
+
+model crystal-rod-240
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_crystal-rod-240,
+    scale = 0.27,
+}
+
+model cursed-land-98
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_cursed-land-98,
+    scale = 0.27,
+}
+
+model cyclopean-tomb-241
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_cyclopean-tomb-241,
+    scale = 0.27,
+}
+
+model dark-ritual-99
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_dark-ritual-99,
+    scale = 0.27,
+}
+
+model darkpact-100
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_darkpact-100,
+    scale = 0.27,
+}
+
+model death-ward-18
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_death-ward-18,
+    scale = 0.27,
+}
+
+model deathgrip-101
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_deathgrip-101,
+    scale = 0.27,
+}
+
+model deathlace-102
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_deathlace-102,
+    scale = 0.27,
+}
+
+model demonic-attorney-103
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_demonic-attorney-103,
+    scale = 0.27,
+}
+
+model demonic-hordes-104
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_demonic-hordes-104,
+    scale = 0.27,
+}
+
+model demonic-tutor-105
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_demonic-tutor-105,
+    scale = 0.27,
+}
+
+model dingus-egg-242
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_dingus-egg-242,
+    scale = 0.27,
+}
+
+model disenchant-19
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_disenchant-19,
+    scale = 0.27,
+}
+
+model disintegrate-141
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_disintegrate-141,
+    scale = 0.27,
+}
+
+model disrupting-scepter-243
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_disrupting-scepter-243,
+    scale = 0.27,
+}
+
+model dragon-whelp-142
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_dragon-whelp-142,
+    scale = 0.27,
+}
+
+model drain-life-106
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_drain-life-106,
+    scale = 0.27,
+}
+
+model drain-power-57
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_drain-power-57,
+    scale = 0.27,
+}
+
+model drudge-skeletons-107
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_drudge-skeletons-107,
+    scale = 0.27,
+}
+
+model dwarven-demolition-team-143
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_dwarven-demolition-team-143,
+    scale = 0.27,
+}
+
+model dwarven-warriors-144
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_dwarven-warriors-144,
+    scale = 0.27,
+}
+
+model earth-elemental-145
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_earth-elemental-145,
+    scale = 0.27,
+}
+
+model earthbind-146
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_earthbind-146,
+    scale = 0.27,
+}
+
+model earthquake-147
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_earthquake-147,
+    scale = 0.27,
+}
+
+model elvish-archers-192
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_elvish-archers-192,
+    scale = 0.27,
+}
+
+model evil-presence-108
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_evil-presence-108,
+    scale = 0.27,
+}
+
+model false-orders-148
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_false-orders-148,
+    scale = 0.27,
+}
+
+model farmstead-20
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_farmstead-20,
+    scale = 0.27,
+}
+
+model fastbond-193
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_fastbond-193,
+    scale = 0.27,
+}
+
+model fear-109
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_fear-109,
+    scale = 0.27,
+}
+
+model feedback-58
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_feedback-58,
+    scale = 0.27,
+}
+
+model fire-elemental-149
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_fire-elemental-149,
+    scale = 0.27,
+}
+
+model fireball-150
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_fireball-150,
+    scale = 0.27,
+}
+
+model firebreathing-151
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_firebreathing-151,
+    scale = 0.27,
+}
+
+model flashfires-152
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_flashfires-152,
+    scale = 0.27,
+}
+
+model flight-59
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_flight-59,
+    scale = 0.27,
+}
+
+model fog-194
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_fog-194,
+    scale = 0.27,
+}
+
+model force-of-nature-195
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_force-of-nature-195,
+    scale = 0.27,
+}
+
+model forcefield-244
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_forcefield-244,
+    scale = 0.27,
+}
+
+model forest-300
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_forest-300,
+    scale = 0.27,
+}
+
+model forest-301
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_forest-301,
+    scale = 0.27,
+}
+
+model forest-302
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_forest-302,
+    scale = 0.27,
+}
+
+model fork-153
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_fork-153,
+    scale = 0.27,
+}
+
+model frozen-shade-110
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_frozen-shade-110,
+    scale = 0.27,
+}
+
+model fungusaur-196
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_fungusaur-196,
+    scale = 0.27,
+}
+
+model gaeas-liege-197
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_gaeas-liege-197,
+    scale = 0.27,
+}
+
+model gauntlet-of-might-245
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_gauntlet-of-might-245,
+    scale = 0.27,
+}
+
+model giant-growth-198
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_giant-growth-198,
+    scale = 0.27,
+}
+
+model giant-spider-199
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_giant-spider-199,
+    scale = 0.27,
+}
+
+model glasses-of-urza-246
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_glasses-of-urza-246,
+    scale = 0.27,
+}
+
+model gloom-111
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_gloom-111,
+    scale = 0.27,
+}
+
+model goblin-balloon-brigade-154
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_goblin-balloon-brigade-154,
+    scale = 0.27,
+}
+
+model goblin-king-155
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_goblin-king-155,
+    scale = 0.27,
+}
+
+model granite-gargoyle-156
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_granite-gargoyle-156,
+    scale = 0.27,
+}
+
+model gray-ogre-157
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_gray-ogre-157,
+    scale = 0.27,
+}
+
+model green-ward-21
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_green-ward-21,
+    scale = 0.27,
+}
+
+model grizzly-bears-200
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_grizzly-bears-200,
+    scale = 0.27,
+}
+
+model guardian-angel-22
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_guardian-angel-22,
+    scale = 0.27,
+}
+
+model healing-salve-23
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_healing-salve-23,
+    scale = 0.27,
+}
+
+model helm-of-chatzuk-247
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_helm-of-chatzuk-247,
+    scale = 0.27,
+}
+
+model hill-giant-158
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_hill-giant-158,
+    scale = 0.27,
+}
+
+model holy-armor-24
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_holy-armor-24,
+    scale = 0.27,
+}
+
+model holy-strength-25
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_holy-strength-25,
+    scale = 0.27,
+}
+
+model howl-from-beyond-112
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_howl-from-beyond-112,
+    scale = 0.27,
+}
+
+model howling-mine-248
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_howling-mine-248,
+    scale = 0.27,
+}
+
+model hurloon-minotaur-159
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_hurloon-minotaur-159,
+    scale = 0.27,
+}
+
+model hurricane-201
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_hurricane-201,
+    scale = 0.27,
+}
+
+model hypnotic-specter-113
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_hypnotic-specter-113,
+    scale = 0.27,
+}
+
+model ice-storm-202
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_ice-storm-202,
+    scale = 0.27,
+}
+
+model icy-manipulator-249
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_icy-manipulator-249,
+    scale = 0.27,
+}
+
+model illusionary-mask-250
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_illusionary-mask-250,
+    scale = 0.27,
+}
+
+model instill-energy-203
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_instill-energy-203,
+    scale = 0.27,
+}
+
+model invisibility-60
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_invisibility-60,
+    scale = 0.27,
+}
+
+model iron-star-251
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_iron-star-251,
+    scale = 0.27,
+}
+
+model ironclaw-orcs-160
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_ironclaw-orcs-160,
+    scale = 0.27,
+}
+
+model ironroot-treefolk-204
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_ironroot-treefolk-204,
+    scale = 0.27,
+}
+
+model island-291
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_island-291,
+    scale = 0.27,
+}
+
+model island-292
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_island-292,
+    scale = 0.27,
+}
+
+model island-293
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_island-293,
+    scale = 0.27,
+}
+
+model island-sanctuary-26
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_island-sanctuary-26,
+    scale = 0.27,
+}
+
+model ivory-cup-252
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_ivory-cup-252,
+    scale = 0.27,
+}
+
+model jade-monolith-253
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_jade-monolith-253,
+    scale = 0.27,
+}
+
+model jade-statue-254
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_jade-statue-254,
+    scale = 0.27,
+}
+
+model jayemdae-tome-255
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_jayemdae-tome-255,
+    scale = 0.27,
+}
+
+model juggernaut-256
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_juggernaut-256,
+    scale = 0.27,
+}
+
+model jump-61
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_jump-61,
+    scale = 0.27,
+}
+
+model karma-27
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_karma-27,
+    scale = 0.27,
+}
+
+model keldon-warlord-161
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_keldon-warlord-161,
+    scale = 0.27,
+}
+
+model kormus-bell-257
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_kormus-bell-257,
+    scale = 0.27,
+}
+
+model kudzu-205
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_kudzu-205,
+    scale = 0.27,
+}
+
+model lance-28
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_lance-28,
+    scale = 0.27,
+}
+
+model ley-druid-206
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_ley-druid-206,
+    scale = 0.27,
+}
+
+model library-of-leng-258
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_library-of-leng-258,
+    scale = 0.27,
+}
+
+model lich-114
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_lich-114,
+    scale = 0.27,
+}
+
+model lifeforce-207
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_lifeforce-207,
+    scale = 0.27,
+}
+
+model lifelace-208
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_lifelace-208,
+    scale = 0.27,
+}
+
+model lifetap-62
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_lifetap-62,
+    scale = 0.27,
+}
+
+model lightning-bolt-162
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_lightning-bolt-162,
+    scale = 0.27,
+}
+
+model living-artifact-209
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_living-artifact-209,
+    scale = 0.27,
+}
+
+model living-lands-210
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_living-lands-210,
+    scale = 0.27,
+}
+
+model living-wall-259
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_living-wall-259,
+    scale = 0.27,
+}
+
+model llanowar-elves-211
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_llanowar-elves-211,
+    scale = 0.27,
+}
+
+model lord-of-atlantis-63
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_lord-of-atlantis-63,
+    scale = 0.27,
+}
+
+model lord-of-the-pit-115
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_lord-of-the-pit-115,
+    scale = 0.27,
+}
+
+model lure-212
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_lure-212,
+    scale = 0.27,
+}
+
+model magical-hack-64
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_magical-hack-64,
+    scale = 0.27,
+}
+
+model mahamoti-djinn-65
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_mahamoti-djinn-65,
+    scale = 0.27,
+}
+
+model mana-flare-163
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_mana-flare-163,
+    scale = 0.27,
+}
+
+model mana-short-66
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_mana-short-66,
+    scale = 0.27,
+}
+
+model mana-vault-260
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_mana-vault-260,
+    scale = 0.27,
+}
+
+model manabarbs-164
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_manabarbs-164,
+    scale = 0.27,
+}
+
+model meekstone-261
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_meekstone-261,
+    scale = 0.27,
+}
+
+model merfolk-of-the-pearl-trident-67
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_merfolk-of-the-pearl-trident-67,
+    scale = 0.27,
+}
+
+model mesa-pegasus-29
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_mesa-pegasus-29,
+    scale = 0.27,
+}
+
+model mind-twist-116
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_mind-twist-116,
+    scale = 0.27,
+}
+
+model monss-goblin-raiders-165
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_monss-goblin-raiders-165,
+    scale = 0.27,
+}
+
+model mountain-297
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_mountain-297,
+    scale = 0.27,
+}
+
+model mountain-298
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_mountain-298,
+    scale = 0.27,
+}
+
+model mountain-299
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_mountain-299,
+    scale = 0.27,
+}
+
+model mox-emerald-262
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_mox-emerald-262,
+    scale = 0.27,
+}
+
+model mox-jet-263
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_mox-jet-263,
+    scale = 0.27,
+}
+
+model mox-pearl-264
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_mox-pearl-264,
+    scale = 0.27,
+}
+
+model mox-ruby-265
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_mox-ruby-265,
+    scale = 0.27,
+}
+
+model mox-sapphire-266
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_mox-sapphire-266,
+    scale = 0.27,
+}
+
+model natural-selection-213
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_natural-selection-213,
+    scale = 0.27,
+}
+
+model nether-shadow-117
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_nether-shadow-117,
+    scale = 0.27,
+}
+
+model nettling-imp-118
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_nettling-imp-118,
+    scale = 0.27,
+}
+
+model nevinyrrals-disk-267
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_nevinyrrals-disk-267,
+    scale = 0.27,
+}
+
+model nightmare-119
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_nightmare-119,
+    scale = 0.27,
+}
+
+model northern-paladin-30
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_northern-paladin-30,
+    scale = 0.27,
+}
+
+model obsianus-golem-268
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_obsianus-golem-268,
+    scale = 0.27,
+}
+
+model orcish-artillery-166
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_orcish-artillery-166,
+    scale = 0.27,
+}
+
+model orcish-oriflamme-167
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_orcish-oriflamme-167,
+    scale = 0.27,
+}
+
+model paralyze-120
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_paralyze-120,
+    scale = 0.27,
+}
+
+model pearled-unicorn-31
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_pearled-unicorn-31,
+    scale = 0.27,
+}
+
+model personal-incarnation-32
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_personal-incarnation-32,
+    scale = 0.27,
+}
+
+model pestilence-121
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_pestilence-121,
+    scale = 0.27,
+}
+
+model phantasmal-forces-68
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_phantasmal-forces-68,
+    scale = 0.27,
+}
+
+model phantasmal-terrain-69
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_phantasmal-terrain-69,
+    scale = 0.27,
+}
+
+model phantom-monster-70
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_phantom-monster-70,
+    scale = 0.27,
+}
+
+model pirate-ship-71
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_pirate-ship-71,
+    scale = 0.27,
+}
+
+model plague-rats-122
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_plague-rats-122,
+    scale = 0.27,
+}
+
+model plains-288
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_plains-288,
+    scale = 0.27,
+}
+
+model plains-289
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_plains-289,
+    scale = 0.27,
+}
+
+model plains-290
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_plains-290,
+    scale = 0.27,
+}
+
+model plateau-280
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_plateau-280,
+    scale = 0.27,
+}
+
+model power-leak-72
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_power-leak-72,
+    scale = 0.27,
+}
+
+model power-sink-73
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_power-sink-73,
+    scale = 0.27,
+}
+
+model power-surge-168
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_power-surge-168,
+    scale = 0.27,
+}
+
+model prodigal-sorcerer-74
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_prodigal-sorcerer-74,
+    scale = 0.27,
+}
+
+model psionic-blast-75
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_psionic-blast-75,
+    scale = 0.27,
+}
+
+model psychic-venom-76
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_psychic-venom-76,
+    scale = 0.27,
+}
+
+model purelace-33
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_purelace-33,
+    scale = 0.27,
+}
+
+model raging-river-169
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_raging-river-169,
+    scale = 0.27,
+}
+
+model raise-dead-123
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_raise-dead-123,
+    scale = 0.27,
+}
+
+model red-elemental-blast-170
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_red-elemental-blast-170,
+    scale = 0.27,
+}
+
+model red-ward-34
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_red-ward-34,
+    scale = 0.27,
+}
+
+model regeneration-214
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_regeneration-214,
+    scale = 0.27,
+}
+
+model regrowth-215
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_regrowth-215,
+    scale = 0.27,
+}
+
+model resurrection-35
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_resurrection-35,
+    scale = 0.27,
+}
+
+model reverse-damage-36
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_reverse-damage-36,
+    scale = 0.27,
+}
+
+model righteousness-37
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_righteousness-37,
+    scale = 0.27,
+}
+
+model roc-of-kher-ridges-171
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_roc-of-kher-ridges-171,
+    scale = 0.27,
+}
+
+model rock-hydra-172
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_rock-hydra-172,
+    scale = 0.27,
+}
+
+model rod-of-ruin-269
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_rod-of-ruin-269,
+    scale = 0.27,
+}
+
+model royal-assassin-124
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_royal-assassin-124,
+    scale = 0.27,
+}
+
+model sacrifice-125
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_sacrifice-125,
+    scale = 0.27,
+}
+
+model samite-healer-38
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_samite-healer-38,
+    scale = 0.27,
+}
+
+model savannah-281
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_savannah-281,
+    scale = 0.27,
+}
+
+model savannah-lions-39
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_savannah-lions-39,
+    scale = 0.27,
+}
+
+model scathe-zombies-126
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_scathe-zombies-126,
+    scale = 0.27,
+}
+
+model scavenging-ghoul-127
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_scavenging-ghoul-127,
+    scale = 0.27,
+}
+
+model scrubland-282
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_scrubland-282,
+    scale = 0.27,
+}
+
+model scryb-sprites-216
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_scryb-sprites-216,
+    scale = 0.27,
+}
+
+model sea-serpent-77
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_sea-serpent-77,
+    scale = 0.27,
+}
+
+model sedge-troll-173
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_sedge-troll-173,
+    scale = 0.27,
+}
+
+model sengir-vampire-128
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_sengir-vampire-128,
+    scale = 0.27,
+}
+
+model serra-angel-40
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_serra-angel-40,
+    scale = 0.27,
+}
+
+model shanodin-dryads-217
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_shanodin-dryads-217,
+    scale = 0.27,
+}
+
+model shatter-174
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_shatter-174,
+    scale = 0.27,
+}
+
+model shivan-dragon-175
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_shivan-dragon-175,
+    scale = 0.27,
+}
+
+model simulacrum-129
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_simulacrum-129,
+    scale = 0.27,
+}
+
+model sinkhole-130
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_sinkhole-130,
+    scale = 0.27,
+}
+
+model sirens-call-78
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_sirens-call-78,
+    scale = 0.27,
+}
+
+model sleight-of-mind-79
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_sleight-of-mind-79,
+    scale = 0.27,
+}
+
+model smoke-176
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_smoke-176,
+    scale = 0.27,
+}
+
+model sol-ring-270
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_sol-ring-270,
+    scale = 0.27,
+}
+
+model soul-net-271
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_soul-net-271,
+    scale = 0.27,
+}
+
+model spell-blast-80
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_spell-blast-80,
+    scale = 0.27,
+}
+
+model stasis-81
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_stasis-81,
+    scale = 0.27,
+}
+
+model steal-artifact-82
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_steal-artifact-82,
+    scale = 0.27,
+}
+
+model stone-giant-177
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_stone-giant-177,
+    scale = 0.27,
+}
+
+model stone-rain-178
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_stone-rain-178,
+    scale = 0.27,
+}
+
+model stream-of-life-218
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_stream-of-life-218,
+    scale = 0.27,
+}
+
+model sunglasses-of-urza-272
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_sunglasses-of-urza-272,
+    scale = 0.27,
+}
+
+model swamp-294
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_swamp-294,
+    scale = 0.27,
+}
+
+model swamp-295
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_swamp-295,
+    scale = 0.27,
+}
+
+model swamp-296
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_swamp-296,
+    scale = 0.27,
+}
+
+model swords-to-plowshares-41
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_swords-to-plowshares-41,
+    scale = 0.27,
+}
+
+model taiga-283
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_taiga-283,
+    scale = 0.27,
+}
+
+model terror-131
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_terror-131,
+    scale = 0.27,
+}
+
+model the-hive-273
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_the-hive-273,
+    scale = 0.27,
+}
+
+model thicket-basilisk-219
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_thicket-basilisk-219,
+    scale = 0.27,
+}
+
+model thoughtlace-83
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_thoughtlace-83,
+    scale = 0.27,
+}
+
+model throne-of-bone-274
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_throne-of-bone-274,
+    scale = 0.27,
+}
+
+model timber-wolves-220
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_timber-wolves-220,
+    scale = 0.27,
+}
+
+model time-vault-275
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_time-vault-275,
+    scale = 0.27,
+}
+
+model time-walk-84
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_time-walk-84,
+    scale = 0.27,
+}
+
+model timetwister-85
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_timetwister-85,
+    scale = 0.27,
+}
+
+model tranquility-221
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_tranquility-221,
+    scale = 0.27,
+}
+
+model tropical-island-284
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_tropical-island-284,
+    scale = 0.27,
+}
+
+model tsunami-222
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_tsunami-222,
+    scale = 0.27,
+}
+
+model tundra-285
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_tundra-285,
+    scale = 0.27,
+}
+
+model tunnel-179
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_tunnel-179,
+    scale = 0.27,
+}
+
+model twiddle-86
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_twiddle-86,
+    scale = 0.27,
+}
+
+model two-headed-giant-of-foriys-180
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_two-headed-giant-of-foriys-180,
+    scale = 0.27,
+}
+
+model underground-sea-286
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_underground-sea-286,
+    scale = 0.27,
+}
+
+model unholy-strength-132
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_unholy-strength-132,
+    scale = 0.27,
+}
+
+model unsummon-87
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_unsummon-87,
+    scale = 0.27,
+}
+
+model uthden-troll-181
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_uthden-troll-181,
+    scale = 0.27,
+}
+
+model verduran-enchantress-223
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_verduran-enchantress-223,
+    scale = 0.27,
+}
+
+model vesuvan-doppelganger-88
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_vesuvan-doppelganger-88,
+    scale = 0.27,
+}
+
+model veteran-bodyguard-42
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_veteran-bodyguard-42,
+    scale = 0.27,
+}
+
+model volcanic-eruption-89
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_volcanic-eruption-89,
+    scale = 0.27,
+}
+
+model volcanic-island-287
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_volcanic-island-287,
+    scale = 0.27,
+}
+
+model wall-of-air-90
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_wall-of-air-90,
+    scale = 0.27,
+}
+
+model wall-of-bone-133
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_wall-of-bone-133,
+    scale = 0.27,
+}
+
+model wall-of-brambles-224
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_wall-of-brambles-224,
+    scale = 0.27,
+}
+
+model wall-of-fire-182
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_wall-of-fire-182,
+    scale = 0.27,
+}
+
+model wall-of-ice-225
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_wall-of-ice-225,
+    scale = 0.27,
+}
+
+model wall-of-stone-183
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_wall-of-stone-183,
+    scale = 0.27,
+}
+
+model wall-of-swords-43
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_wall-of-swords-43,
+    scale = 0.27,
+}
+
+model wall-of-water-91
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_wall-of-water-91,
+    scale = 0.27,
+}
+
+model wall-of-wood-226
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_wall-of-wood-226,
+    scale = 0.27,
+}
+
+model wanderlust-227
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_wanderlust-227,
+    scale = 0.27,
+}
+
+model war-mammoth-228
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_war-mammoth-228,
+    scale = 0.27,
+}
+
+model warp-artifact-134
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_warp-artifact-134,
+    scale = 0.27,
+}
+
+model water-elemental-92
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_water-elemental-92,
+    scale = 0.27,
+}
+
+model weakness-135
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_weakness-135,
+    scale = 0.27,
+}
+
+model web-229
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_web-229,
+    scale = 0.27,
+}
+
+model wheel-of-fortune-184
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_wheel-of-fortune-184,
+    scale = 0.27,
+}
+
+model white-knight-44
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_white-knight-44,
+    scale = 0.27,
+}
+
+model white-ward-45
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_white-ward-45,
+    scale = 0.27,
+}
+
+model wild-growth-230
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_wild-growth-230,
+    scale = 0.27,
+}
+
+model will-o-the-wisp-136
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_will-o-the-wisp-136,
+    scale = 0.27,
+}
+
+model winter-orb-276
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_winter-orb-276,
+    scale = 0.27,
+}
+
+model wooden-sphere-277
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_wooden-sphere-277,
+    scale = 0.27,
+}
+
+model word-of-command-137
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_word-of-command-137,
+    scale = 0.27,
+}
+
+model wrath-of-god-46
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_wrath-of-god-46,
+    scale = 0.27,
+}
+
+model zombie-master-138
+{
+    mesh = WorldItems/Notebook,
+    texture = WorldItems/Item_zombie-master-138,
+    scale = 0.27,
+}
+
+}

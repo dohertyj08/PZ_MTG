@@ -1,0 +1,19 @@
+module mtgcards
+{
+imports
+{
+Base
+}
+
+/* Placeholder items - mod does not do anything yet */
+
+item mtg_placeholder
+{
+DisplayCategory=MTG,
+DisplayName= MTG Placeholder Item,
+Icon=base_pack,
+Weight=0.01,
+Type=Normal,
+}
+
+}

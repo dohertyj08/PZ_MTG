@@ -1,0 +1,11 @@
+Sandbox_EN = {
+	Sandbox_MTG = "Magic The Gathering",
+	Sandbox_MTG_enableMod = "Enable MTG Mod",
+	Sandbox_MTG_enableMod_tooltip = "Enable or disable the Magic The Gathering mod",
+	Sandbox_MTG_ZombieDrops = "Zombie Card Drops",
+	Sandbox_MTG_ZombieDrops_tooltip = "Allow zombies to drop MTG cards",
+	Sandbox_MTG_ZombieDropRate = "Zombie Drop Rate",
+	Sandbox_MTG_ZombieDropRate_tooltip = "Chance for zombies to drop cards (0.1-100)",
+	Sandbox_MTG_spawnRate = "World Spawn Rate",
+	Sandbox_MTG_spawnRate_tooltip = "Rate of MTG cards spawning in the world",
+}
