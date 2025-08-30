@@ -53,8 +53,8 @@ function open_booster_pack_beta(items, result, player)
     -- Generate 11 commons (lands can replace)
     for i = 1, 11 do
         local selectedCard = nil
-        -- 20% chance for a basic land instead of common
-        if ZombRand(5) == 0 then
+        -- 38.02% chance for a basic land instead of common
+        if ZombRand(10000) < 3802 then
             selectedCard = getRandomCardFromRarityTable(beta_lands)
         else
             selectedCard = getRandomCardFromRarityTable(beta_c)
@@ -67,8 +67,8 @@ function open_booster_pack_beta(items, result, player)
     -- Generate 3 uncommons (lands can replace)
     for i = 1, 3 do
         local selectedCard = nil
-        -- 10% chance for a basic land instead of uncommon
-        if ZombRand(10) == 0 then
+        -- 21.5% chance for a basic land instead of uncommon
+        if ZombRand(10000) < 2150 then
             selectedCard = getRandomCardFromRarityTable(beta_lands)
         else
             selectedCard = getRandomCardFromRarityTable(beta_u)
@@ -79,9 +79,9 @@ function open_booster_pack_beta(items, result, player)
     end
     
     -- Generate 1 rare
-    -- Island has 1/121 chance to replace rare (Beta print run specifics)
+    -- 3.31% chance for Island to replace rare
     local rareCard = nil
-    if ZombRand(121) == 0 then
+    if ZombRand(10000) < 331 then
         -- Island replaces the rare
         rareCard = "mtgcards.island"
     else
@@ -102,7 +102,7 @@ function open_booster_pack_beta(items, result, player)
 end
 
 -- Beta Starter Deck opening function
--- 60 cards: 45 commons, 13 uncommons, 2 rares
+-- 60 cards: 45 commons, 12 uncommons, 3 rares
 -- Basic lands can replace commons/uncommons
 function open_starter_deck_beta(items, result, player)
     local player = getSpecificPlayer(0)
@@ -115,8 +115,8 @@ function open_starter_deck_beta(items, result, player)
     -- Generate 45 commons (lands can replace)
     for i = 1, 45 do
         local selectedCard = nil
-        -- 40% chance for a basic land in starter deck (need mana base)
-        if ZombRand(5) < 2 then
+        -- 38.02% chance for a basic land instead of common
+        if ZombRand(10000) < 3802 then
             selectedCard = getRandomCardFromRarityTable(beta_lands)
         else
             selectedCard = getRandomCardFromRarityTable(beta_c)
@@ -126,11 +126,11 @@ function open_starter_deck_beta(items, result, player)
         end
     end
     
-    -- Generate 13 uncommons (lands can replace)
-    for i = 1, 13 do
+    -- Generate 12 uncommons (lands can replace)
+    for i = 1, 12 do
         local selectedCard = nil
-        -- 15% chance for a basic land instead of uncommon
-        if ZombRand(100) < 15 then
+        -- 21.5% chance for a basic land instead of uncommon
+        if ZombRand(10000) < 2150 then
             selectedCard = getRandomCardFromRarityTable(beta_lands)
         else
             selectedCard = getRandomCardFromRarityTable(beta_u)
@@ -140,11 +140,17 @@ function open_starter_deck_beta(items, result, player)
         end
     end
     
-    -- Generate 2 rares (no land replacement for rares in starter)
-    for i = 1, 2 do
-        local rareCard = getRandomCardFromRarityTable(beta_r)
-        if rareCard then
-            table.insert(cardQueue, rareCard)
+    -- Generate 3 rares (basic lands can replace)
+    for i = 1, 3 do
+        local selectedCard = nil
+        -- 3.31% chance for a basic land instead of rare
+        if ZombRand(10000) < 331 then
+            selectedCard = getRandomCardFromRarityTable(beta_lands)
+        else
+            selectedCard = getRandomCardFromRarityTable(beta_r)
+        end
+        if selectedCard then
+            table.insert(cardQueue, selectedCard)
         end
     end
     
@@ -201,22 +207,22 @@ function draw_single_card(items, result, player)
     local selectedCard = nil
     
     if cardType == "common" then
-        -- 20% chance for a basic land instead of common
-        if ZombRand(5) == 0 then
+        -- 38.02% chance for a basic land instead of common
+        if ZombRand(10000) < 3802 then
             selectedCard = getRandomCardFromRarityTable(beta_lands)
         else
             selectedCard = getRandomCardFromRarityTable(beta_c)
         end
     elseif cardType == "uncommon" then
-        -- 10% chance for a basic land instead of uncommon
-        if ZombRand(10) == 0 then
+        -- 21.5% chance for a basic land instead of uncommon
+        if ZombRand(10000) < 2150 then
             selectedCard = getRandomCardFromRarityTable(beta_lands)
         else
             selectedCard = getRandomCardFromRarityTable(beta_u)
         end
     elseif cardType == "rare" then
-        -- Island has 1/121 chance to replace rare (Beta print run specifics)
-        if ZombRand(121) == 0 then
+        -- 3.31% chance for Island to replace rare
+        if ZombRand(10000) < 331 then
             selectedCard = "mtgcards.island"
         else
             selectedCard = getRandomCardFromRarityTable(beta_r)
