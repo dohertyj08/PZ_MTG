@@ -172,11 +172,60 @@ function draw_single_card(items, result, player)
     local player = getSpecificPlayer(0)
     player:getEmitter():playSound("packOpen2")
     
-    -- For now, just draw a random common (we'll improve this later)
-    local selectedCard = getRandomCardFromRarityTable(beta_c)
+    -- Find the pack being used in the player's inventory
+    local packItem = player:getInventory():getFirstTypeEvalRecurse("mtgcards.booster_pack_beta", function(item)
+        return item:getCurrentUsesFloat() > 0
+    end)
     
+    if not packItem then
+        print("MTG Error: No usable pack found!")
+        return
+    end
+    
+    -- Calculate which card number this is (1-15)
+    -- Note: The drainable system has already consumed the charge, so we calculate based on remaining uses
+    local currentUses = packItem:getCurrentUsesFloat()
+    local cardNumber = math.ceil((1.0 - currentUses) * 15)  -- Direct calculation of which card was just drawn
+    
+    -- Determine card type based on card number
+    local cardType = nil
+    if cardNumber <= 11 then
+        cardType = "common"
+    elseif cardNumber <= 14 then
+        cardType = "uncommon"
+    else
+        cardType = "rare"
+    end
+    
+    -- Generate the appropriate card with land replacement logic
+    local selectedCard = nil
+    
+    if cardType == "common" then
+        -- 20% chance for a basic land instead of common
+        if ZombRand(5) == 0 then
+            selectedCard = getRandomCardFromRarityTable(beta_lands)
+        else
+            selectedCard = getRandomCardFromRarityTable(beta_c)
+        end
+    elseif cardType == "uncommon" then
+        -- 10% chance for a basic land instead of uncommon
+        if ZombRand(10) == 0 then
+            selectedCard = getRandomCardFromRarityTable(beta_lands)
+        else
+            selectedCard = getRandomCardFromRarityTable(beta_u)
+        end
+    elseif cardType == "rare" then
+        -- Island has 1/121 chance to replace rare (Beta print run specifics)
+        if ZombRand(121) == 0 then
+            selectedCard = "mtgcards.island"
+        else
+            selectedCard = getRandomCardFromRarityTable(beta_r)
+        end
+    end
+    
+    -- Add the card to inventory
     if selectedCard then
         player:getInventory():AddItem(selectedCard)
-        print("MTG Debug: Drew " .. selectedCard)
+        player:Say("Drew a " .. cardType .. " card!")
     end
 end
