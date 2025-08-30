@@ -1,4 +1,4 @@
 Recipes_EN = {
-    Recipe_Open_Beta_Booster_Pack = "Open Booster Pack",
     Recipe_Open_Beta_Starter_Deck = "Open Starter Deck",
+    Recipe_Draw_Card = "Draw Card",
 }

@@ -5,16 +5,16 @@ imports
 Base
 }
 
-craftRecipe Open Beta Booster Pack
+craftRecipe Draw Card
 {
-    OnCreate = open_booster_pack_beta,
-    Time = 0,
-    Category = Cooking,
+    OnCreate = draw_single_card,
+    Time = 15,
+    Category = Miscellaneous,
     CanWalk = true,
-    Tags = InHandCraft;Cooking,
+    Tags = InHandCraft;CanBeDoneInDark,
     inputs
     {
-        item 1 [mtgcards.booster_pack_beta] mode:destroy,
+        item 1 [mtgcards.booster_pack_beta],
     }
     outputs
     {

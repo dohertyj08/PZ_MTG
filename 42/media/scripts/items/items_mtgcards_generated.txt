@@ -13,8 +13,12 @@ item booster_pack_beta
     DisplayName=Beta Booster Pack,
     Icon=base_pack,
     Weight=0.1,
-    Type=Normal,
+    Type=Drainable,
+    UseDelta=0.0667,
+    UseWhileEquipped=FALSE,
+    KeepOnDeplete=FALSE,
     WorldStaticModel=base_pack,
+    Tags=LessFull,
 }
 
 item starter_deck_beta

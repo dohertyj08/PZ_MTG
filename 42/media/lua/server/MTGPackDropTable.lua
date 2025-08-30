@@ -166,3 +166,17 @@ function open_starter_deck_beta(items, result, player)
     -- Show completion message (texture display disabled for now)
     print("MTGBeta42: Opened starter deck - " .. #cardQueue .. " cards added")
 end
+
+-- Single card drawing function for drainable packs
+function draw_single_card(items, result, player)
+    local player = getSpecificPlayer(0)
+    player:getEmitter():playSound("packOpen2")
+    
+    -- For now, just draw a random common (we'll improve this later)
+    local selectedCard = getRandomCardFromRarityTable(beta_c)
+    
+    if selectedCard then
+        player:getInventory():AddItem(selectedCard)
+        print("MTG Debug: Drew " .. selectedCard)
+    end
+end
