@@ -78,9 +78,25 @@ local function addMTGSpawns()
     table.insert(ProceduralDistributions.list["BookStoreCounter"].items, "mtgcards.booster_pack_beta")
     table.insert(ProceduralDistributions.list["BookStoreCounter"].items, 5 * spawnRate)
     
+    -- BookstoreMisc - Booster packs (0.5), Starter decks (0.2)
+    table.insert(ProceduralDistributions.list["BookstoreMisc"].items, "mtgcards.booster_pack_beta")
+    table.insert(ProceduralDistributions.list["BookstoreMisc"].items, 0.5 * spawnRate)
+    table.insert(ProceduralDistributions.list["BookstoreMisc"].items, "mtgcards.starter_deck_beta")
+    table.insert(ProceduralDistributions.list["BookstoreMisc"].items, 0.2 * spawnRate)
+    
     -- BookStoreBooks - Empty binders (very rare - 0.1)
     table.insert(ProceduralDistributions.list["BookStoreBooks"].items, function() return getRandomEmptyBinder() end)
     table.insert(ProceduralDistributions.list["BookStoreBooks"].items, 0.1 * spawnRate)
+    
+    -- GAS STATIONS & CONVENIENCE STORES
+    -- GasStorageCombo - Booster packs (0.3)
+    table.insert(ProceduralDistributions.list["GasStorageCombo"].items, "mtgcards.booster_pack_beta")
+    table.insert(ProceduralDistributions.list["GasStorageCombo"].items, 0.3 * spawnRate)
+    
+    -- GROCERY STORES
+    -- StoreShelfCombo - Booster packs (0.2)
+    table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, "mtgcards.booster_pack_beta")
+    table.insert(ProceduralDistributions.list["StoreShelfCombo"].items, 0.2 * spawnRate)
     
     -- TOY STORES
     -- CrateToys - Booster packs (10), Starter decks (1)
@@ -134,6 +150,10 @@ local function addMTGSpawns()
     table.insert(ProceduralDistributions.list["WardrobeChild"].items, 4.5 * spawnRate)
     table.insert(ProceduralDistributions.list["WardrobeChild"].items, "mtgcards.starter_deck_beta")
     table.insert(ProceduralDistributions.list["WardrobeChild"].items, 0.5 * spawnRate)
+    
+    -- BedroomDresser - Booster packs (0.1)
+    table.insert(ProceduralDistributions.list["BedroomDresser"].items, "mtgcards.booster_pack_beta")
+    table.insert(ProceduralDistributions.list["BedroomDresser"].items, 0.1 * spawnRate)
     
     -- RESIDENTIAL BOOKSHELVES
     -- LivingRoomShelf - Empty binders (very rare - 0.05)
