@@ -10,18 +10,6 @@ from PIL import Image
 from io import BytesIO
 from collections import defaultdict
 
-# Power Nine cards
-POWER_NINE = [
-    "Black Lotus",
-    "Mox Pearl", 
-    "Mox Sapphire",
-    "Mox Ruby",
-    "Mox Jet",
-    "Mox Emerald",
-    "Ancestral Recall",
-    "Time Walk",
-    "Timetwister"
-]
 
 def fetch_beta_cards():
     """Fetch all cards from Limited Edition Beta from Scryfall"""
@@ -134,7 +122,6 @@ def generate_lua_data(cards):
     uncommons = []
     rares = []
     lands = []
-    power_nine_list = []
     all_cards = []
     display_names = {}
     
@@ -150,10 +137,6 @@ def generate_lua_data(cards):
         # Check if it's a basic land
         if card.get('type_line', '').startswith('Basic Land'):
             lands.append(item_id)
-        # Check if it's Power Nine
-        elif name in POWER_NINE:
-            power_nine_list.append(item_id)
-            rares.append(item_id)  # Also include in rares
         # Sort by rarity
         elif card['rarity'] == 'common':
             commons.append(item_id)
@@ -182,10 +165,6 @@ beta_c = {
     
     for card in lands:
         lua_code += f'    "{card}",\n'
-    lua_code += "}\n\npower_nine = {\n"
-    
-    for card in power_nine_list:
-        lua_code += f'    "{card}",\n'
     lua_code += "}\n\n"
     
     # Add display names
@@ -196,7 +175,7 @@ beta_c = {
     
     # Add stats
     lua_code += f"\n-- Stats: {len(commons)} commons, {len(uncommons)} uncommons, "
-    lua_code += f"{len(rares)} rares, {len(lands)} lands, {len(power_nine_list)} power nine\n"
+    lua_code += f"{len(rares)} rares, {len(lands)} lands\n"
     lua_code += f"-- Total: {len(all_cards)} cards\n"
     
     return lua_code, all_cards, display_names
@@ -215,8 +194,8 @@ Base
 
 item booster_pack_beta
 {
-    DisplayCategory=MTG,
-    DisplayName=Beta Booster Pack,
+    DisplayCategory=MTG Booster,
+    DisplayName=MTG Booster Pack,
     Icon=base_pack,
     Weight=0.1,
     Type=Normal,
@@ -225,8 +204,8 @@ item booster_pack_beta
 
 item starter_deck_beta
 {
-    DisplayCategory=MTG,
-    DisplayName=Beta Starter Deck,
+    DisplayCategory=MTG Booster,
+    DisplayName=MTG Starter Deck,
     Icon=base_pack,
     Weight=0.3,
     Type=Normal,
@@ -243,7 +222,7 @@ item complete_set_binder
     Weight=0.2,
     Type=Container,
     WorldStaticModel=base_binder,
-    AcceptItemFunction=MTG_AcceptItemFunction.beta_complete,
+    AcceptItemFunction=MTG_AcceptItemFunction.acceptMTGCards,
     OpenSound=OpenBag,
     CloseSound=CloseBag,
     PutInSound=PutItemInBag,
@@ -259,7 +238,7 @@ item power_nine_binder
     Weight=0.1,
     Type=Container,
     WorldStaticModel=duplicates_binder,
-    AcceptItemFunction=MTG_AcceptItemFunction.power_nine,
+    AcceptItemFunction=MTG_AcceptItemFunction.acceptMTGCards,
     OpenSound=OpenBag,
     CloseSound=CloseBag,
     PutInSound=PutItemInBag,
@@ -273,7 +252,7 @@ item power_nine_binder
         display_name = display_names[filename]
         items_code += f"""item {filename}
 {{
-    DisplayCategory=MTG,
+    DisplayCategory=MTG Card,
     DisplayName={display_name},
     Icon=Item_{filename},
     Weight=0.001,

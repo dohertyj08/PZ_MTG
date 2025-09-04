@@ -10,7 +10,7 @@ Base
 item booster_pack_beta
 {
     DisplayCategory=MTG Booster,
-    DisplayName=Beta Booster Pack,
+    DisplayName=MTG Booster Pack,
     Icon=base_pack,
     Weight=0.1,
     Type=Drainable,
@@ -24,7 +24,7 @@ item booster_pack_beta
 item starter_deck_beta
 {
     DisplayCategory=MTG Booster,
-    DisplayName=Beta Starter Deck,
+    DisplayName=MTG Starter Deck,
     Icon=base_pack,
     Weight=0.3,
     Type=Normal,
@@ -41,7 +41,7 @@ item complete_set_binder
     Weight=0.2,
     Type=Container,
     WorldStaticModel=base_binder,
-    AcceptItemFunction=MTG_AcceptItemFunction.beta_complete,
+    AcceptItemFunction=MTG_AcceptItemFunction.acceptMTGCards,
     OpenSound=OpenBag,
     CloseSound=CloseBag,
     PutInSound=PutItemInBag,
@@ -57,7 +57,7 @@ item power_nine_binder
     Weight=0.2,
     Type=Container,
     WorldStaticModel=power_nine_binder,
-    AcceptItemFunction=MTG_AcceptItemFunction.power_nine,
+    AcceptItemFunction=MTG_AcceptItemFunction.acceptMTGCards,
     OpenSound=OpenBag,
     CloseSound=CloseBag,
     PutInSound=PutItemInBag,
@@ -73,7 +73,7 @@ item LandBinder
     Weight=0.2,
     Type=Container,
     WorldStaticModel=LandBinder,
-    AcceptItemFunction=MTG_AcceptItemFunction.land_binder,
+    AcceptItemFunction=MTG_AcceptItemFunction.acceptMTGCards,
     OpenSound=OpenBag,
     CloseSound=CloseBag,
     PutInSound=PutItemInBag,

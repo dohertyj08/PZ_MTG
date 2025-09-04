@@ -315,18 +315,6 @@ beta_lands = {
     "mtgcards.swamp-296",
 }
 
-power_nine = {
-    "mtgcards.ancestral-recall-48",
-    "mtgcards.black-lotus-233",
-    "mtgcards.mox-emerald-262",
-    "mtgcards.mox-jet-263",
-    "mtgcards.mox-pearl-264",
-    "mtgcards.mox-ruby-265",
-    "mtgcards.mox-sapphire-266",
-    "mtgcards.timetwister-85",
-    "mtgcards.time-walk-84",
-}
-
 -- Display names mapping
 mtgCardDisplayNames = {
     ["air-elemental-47"] = "Air Elemental",
@@ -633,5 +621,5 @@ mtgCardDisplayNames = {
     ["zombie-master-138"] = "Zombie Master",
 }
 
--- Stats: 75 commons, 95 uncommons, 117 rares, 15 lands, 9 power nine
+-- Stats: 75 commons, 95 uncommons, 117 rares, 15 lands
 -- Total: 302 cards
