@@ -3,27 +3,11 @@
 require 'Items/ProceduralDistributions'
 require 'Items/SuburbsDistributions'
 
--- Regular empty binders for places that sell empty binders
-local function getRandomEmptyBinder()
-    local rand = ZombRand(5) -- 0-4
-    if rand < 2 then
-        return "mtgcards.complete_set_binder"
-    elseif rand < 4 then
-        return "mtgcards.power_nine_binder"
-    else
-        return "mtgcards.land_binder"
-    end
-end
 
 
--- Get spawn rate multiplier from sandbox
-local function getSpawnRate()
-    return SandboxVars.MTG.SpawnRate or 1.0
-end
-
--- Apply spawn rates with sandbox multiplier
+-- Apply spawn rates
 local function addMTGSpawns()
-    local spawnRate = getSpawnRate()
+    local spawnRate = 1.0
     
     -- COMIC STORES
     -- ComicStoreShelfComics - Booster packs (25, 10, 10, 5, 5), Starter decks (6.25, 2.5, 2.5, 1.25)
@@ -62,135 +46,171 @@ local function addMTGSpawns()
     table.insert(ProceduralDistributions.list["ComicStoreShelfGames"].items, 5 * spawnRate)
     
     -- ComicStoreDisplayBooks - Empty binders (5)
-    for i = 1, 5 do
-        table.insert(ProceduralDistributions.list["ComicStoreDisplayBooks"].items, function() return getRandomEmptyBinder() end)
-        table.insert(ProceduralDistributions.list["ComicStoreDisplayBooks"].items, spawnRate)
-    end
+    table.insert(ProceduralDistributions.list["ComicStoreDisplayBooks"].items, "mtgcards.complete_set_binder")
+    table.insert(ProceduralDistributions.list["ComicStoreDisplayBooks"].items, 5 * spawnRate)
+    table.insert(ProceduralDistributions.list["ComicStoreDisplayBooks"].items, "mtgcards.power_nine_binder")
+    table.insert(ProceduralDistributions.list["ComicStoreDisplayBooks"].items, 5 * spawnRate)
+    table.insert(ProceduralDistributions.list["ComicStoreDisplayBooks"].items, "mtgcards.land_binder")
+    table.insert(ProceduralDistributions.list["ComicStoreDisplayBooks"].items, 5 * spawnRate)
     
-    -- ComicStoreDisplayDice - MTG items at RPGmanual rate (0.1)
+    -- ComicStoreDisplayDice - MTG items at RPGmanual rate (1)
     table.insert(ProceduralDistributions.list["ComicStoreDisplayDice"].items, "mtgcards.booster_pack_beta")
-    table.insert(ProceduralDistributions.list["ComicStoreDisplayDice"].items, 0.1 * spawnRate)
+    table.insert(ProceduralDistributions.list["ComicStoreDisplayDice"].items, 1 * spawnRate)
     table.insert(ProceduralDistributions.list["ComicStoreDisplayDice"].items, "mtgcards.starter_deck_beta")
-    table.insert(ProceduralDistributions.list["ComicStoreDisplayDice"].items, 0.1 * spawnRate)
+    table.insert(ProceduralDistributions.list["ComicStoreDisplayDice"].items, 1 * spawnRate)
     
     -- BOOKSTORES
     -- BookStoreCounter - Booster packs (5)
     table.insert(ProceduralDistributions.list["BookStoreCounter"].items, "mtgcards.booster_pack_beta")
     table.insert(ProceduralDistributions.list["BookStoreCounter"].items, 5 * spawnRate)
     
-    -- BookstoreMisc - Booster packs (0.5), Starter decks (0.2)
+    -- BookstoreMisc - Booster packs (2), Starter decks (1)
     table.insert(ProceduralDistributions.list["BookstoreMisc"].items, "mtgcards.booster_pack_beta")
-    table.insert(ProceduralDistributions.list["BookstoreMisc"].items, 0.5 * spawnRate)
+    table.insert(ProceduralDistributions.list["BookstoreMisc"].items, 2 * spawnRate)
     table.insert(ProceduralDistributions.list["BookstoreMisc"].items, "mtgcards.starter_deck_beta")
-    table.insert(ProceduralDistributions.list["BookstoreMisc"].items, 0.2 * spawnRate)
+    table.insert(ProceduralDistributions.list["BookstoreMisc"].items, 1 * spawnRate)
     
-    -- BookStoreBooks - Empty binders (very rare - 0.1)
-    table.insert(ProceduralDistributions.list["BookStoreBooks"].items, function() return getRandomEmptyBinder() end)
-    table.insert(ProceduralDistributions.list["BookStoreBooks"].items, 0.1 * spawnRate)
+    -- BookstoreBooks - Empty binders (rare - 1)
+    table.insert(ProceduralDistributions.list["BookstoreBooks"].items, "mtgcards.complete_set_binder")
+    table.insert(ProceduralDistributions.list["BookstoreBooks"].items, 1 * spawnRate)
+    table.insert(ProceduralDistributions.list["BookstoreBooks"].items, "mtgcards.power_nine_binder")
+    table.insert(ProceduralDistributions.list["BookstoreBooks"].items, 1 * spawnRate)
+    table.insert(ProceduralDistributions.list["BookstoreBooks"].items, "mtgcards.land_binder")
+    table.insert(ProceduralDistributions.list["BookstoreBooks"].items, 1 * spawnRate)
     
     -- TOY STORES
-    -- CrateToys - Booster packs (10), Starter decks (1)
+    -- CrateToys - Booster packs (15, 10, 5), Starter decks (5, 1)
+    table.insert(ProceduralDistributions.list["CrateToys"].items, "mtgcards.booster_pack_beta")
+    table.insert(ProceduralDistributions.list["CrateToys"].items, 15 * spawnRate)
     table.insert(ProceduralDistributions.list["CrateToys"].items, "mtgcards.booster_pack_beta")
     table.insert(ProceduralDistributions.list["CrateToys"].items, 10 * spawnRate)
+    table.insert(ProceduralDistributions.list["CrateToys"].items, "mtgcards.booster_pack_beta")
+    table.insert(ProceduralDistributions.list["CrateToys"].items, 5 * spawnRate)
+    
+    table.insert(ProceduralDistributions.list["CrateToys"].items, "mtgcards.starter_deck_beta")
+    table.insert(ProceduralDistributions.list["CrateToys"].items, 5 * spawnRate)
     table.insert(ProceduralDistributions.list["CrateToys"].items, "mtgcards.starter_deck_beta")
     table.insert(ProceduralDistributions.list["CrateToys"].items, 1 * spawnRate)
     
-    -- GigamartToys - Booster packs (10)
+    -- GigamartToys - Booster packs (15, 10, 5), Starter decks (5, 1)
+    table.insert(ProceduralDistributions.list["GigamartToys"].items, "mtgcards.booster_pack_beta")
+    table.insert(ProceduralDistributions.list["GigamartToys"].items, 15 * spawnRate)
     table.insert(ProceduralDistributions.list["GigamartToys"].items, "mtgcards.booster_pack_beta")
     table.insert(ProceduralDistributions.list["GigamartToys"].items, 10 * spawnRate)
+    table.insert(ProceduralDistributions.list["GigamartToys"].items, "mtgcards.booster_pack_beta")
+    table.insert(ProceduralDistributions.list["GigamartToys"].items, 5 * spawnRate)
     
-    -- GiftStoreToys - Booster packs (3)
+    table.insert(ProceduralDistributions.list["GigamartToys"].items, "mtgcards.starter_deck_beta")
+    table.insert(ProceduralDistributions.list["GigamartToys"].items, 5 * spawnRate)
+    table.insert(ProceduralDistributions.list["GigamartToys"].items, "mtgcards.starter_deck_beta")
+    table.insert(ProceduralDistributions.list["GigamartToys"].items, 1 * spawnRate)
+    
+    -- GiftStoreToys - Booster packs (15, 10, 5), Starter decks (5, 1)
     table.insert(ProceduralDistributions.list["GiftStoreToys"].items, "mtgcards.booster_pack_beta")
-    table.insert(ProceduralDistributions.list["GiftStoreToys"].items, 3 * spawnRate)
+    table.insert(ProceduralDistributions.list["GiftStoreToys"].items, 15 * spawnRate)
+    table.insert(ProceduralDistributions.list["GiftStoreToys"].items, "mtgcards.booster_pack_beta")
+    table.insert(ProceduralDistributions.list["GiftStoreToys"].items, 10 * spawnRate)
+    table.insert(ProceduralDistributions.list["GiftStoreToys"].items, "mtgcards.booster_pack_beta")
+    table.insert(ProceduralDistributions.list["GiftStoreToys"].items, 5 * spawnRate)
+    
+    table.insert(ProceduralDistributions.list["GiftStoreToys"].items, "mtgcards.starter_deck_beta")
+    table.insert(ProceduralDistributions.list["GiftStoreToys"].items, 5 * spawnRate)
+    table.insert(ProceduralDistributions.list["GiftStoreToys"].items, "mtgcards.starter_deck_beta")
+    table.insert(ProceduralDistributions.list["GiftStoreToys"].items, 1 * spawnRate)
     
     -- PAWN SHOPS
-    -- PawnShopShelves - Booster packs (small=1), Starter decks (small=1)
-    table.insert(ProceduralDistributions.list["PawnShopShelves"].items, "mtgcards.booster_pack_beta")
-    table.insert(ProceduralDistributions.list["PawnShopShelves"].items, 1 * spawnRate)
-    table.insert(ProceduralDistributions.list["PawnShopShelves"].items, "mtgcards.starter_deck_beta")
-    table.insert(ProceduralDistributions.list["PawnShopShelves"].items, 1 * spawnRate)
+    -- PawnShopCases - Booster packs (medium=5), Starter decks (medium=5)
+    table.insert(ProceduralDistributions.list["PawnShopCases"].items, "mtgcards.booster_pack_beta")
+    table.insert(ProceduralDistributions.list["PawnShopCases"].items, 5 * spawnRate)
+    table.insert(ProceduralDistributions.list["PawnShopCases"].items, "mtgcards.starter_deck_beta")
+    table.insert(ProceduralDistributions.list["PawnShopCases"].items, 5 * spawnRate)
     
     -- SCHOOLS
-    -- SchoolLockers - Booster packs (small=1), Starter decks (very small=0.1)
+    -- SchoolLockers - Booster packs (medium=5), Starter decks (small=1)
     table.insert(ProceduralDistributions.list["SchoolLockers"].items, "mtgcards.booster_pack_beta")
-    table.insert(ProceduralDistributions.list["SchoolLockers"].items, 1 * spawnRate)
+    table.insert(ProceduralDistributions.list["SchoolLockers"].items, 5 * spawnRate)
     table.insert(ProceduralDistributions.list["SchoolLockers"].items, "mtgcards.starter_deck_beta")
-    table.insert(ProceduralDistributions.list["SchoolLockers"].items, 0.1 * spawnRate)
+    table.insert(ProceduralDistributions.list["SchoolLockers"].items, 1 * spawnRate)
     
-    -- ClassroomDesk - Booster packs (small=1), Starter decks (very small=0.1)
+    -- ClassroomDesk - Booster packs (medium=5), Starter decks (small=1)
     table.insert(ProceduralDistributions.list["ClassroomDesk"].items, "mtgcards.booster_pack_beta")
-    table.insert(ProceduralDistributions.list["ClassroomDesk"].items, 1 * spawnRate)
+    table.insert(ProceduralDistributions.list["ClassroomDesk"].items, 5 * spawnRate)
     table.insert(ProceduralDistributions.list["ClassroomDesk"].items, "mtgcards.starter_deck_beta")
-    table.insert(ProceduralDistributions.list["ClassroomDesk"].items, 0.1 * spawnRate)
+    table.insert(ProceduralDistributions.list["ClassroomDesk"].items, 1 * spawnRate)
     
-    -- UniversityWardrobe - Booster packs (small=1), Starter decks (very small=0.1)
+    -- UniversityWardrobe - Booster packs (medium=5), Starter decks (small=1)
     table.insert(ProceduralDistributions.list["UniversityWardrobe"].items, "mtgcards.booster_pack_beta")
-    table.insert(ProceduralDistributions.list["UniversityWardrobe"].items, 1 * spawnRate)
+    table.insert(ProceduralDistributions.list["UniversityWardrobe"].items, 5 * spawnRate)
     table.insert(ProceduralDistributions.list["UniversityWardrobe"].items, "mtgcards.starter_deck_beta")
-    table.insert(ProceduralDistributions.list["UniversityWardrobe"].items, 0.1 * spawnRate)
+    table.insert(ProceduralDistributions.list["UniversityWardrobe"].items, 1 * spawnRate)
     
-    -- Bag_Schoolbag - Booster packs (12.0), Starter decks (1.0)
+    -- Bag_Schoolbag - Booster packs (12.0), Starter decks (5.0)
     table.insert(SuburbsDistributions.Bag_Schoolbag.items, "mtgcards.booster_pack_beta")
     table.insert(SuburbsDistributions.Bag_Schoolbag.items, 12.0 * spawnRate)
     table.insert(SuburbsDistributions.Bag_Schoolbag.items, "mtgcards.starter_deck_beta")
-    table.insert(SuburbsDistributions.Bag_Schoolbag.items, 1.0 * spawnRate)
+    table.insert(SuburbsDistributions.Bag_Schoolbag.items, 5.0 * spawnRate)
     
     -- ZOMBIE INVENTORIES - Only booster packs (increased rates to compensate)
-    -- inventorymale/inventoryfemale - Booster packs (0.15)
+    -- inventorymale/inventoryfemale - Booster packs (1)
     table.insert(SuburbsDistributions.all.inventoryfemale.items, "mtgcards.booster_pack_beta")
-    table.insert(SuburbsDistributions.all.inventoryfemale.items, 0.15 * spawnRate)
+    table.insert(SuburbsDistributions.all.inventoryfemale.items, 1 * spawnRate)
     
     table.insert(SuburbsDistributions.all.inventorymale.items, "mtgcards.booster_pack_beta")
-    table.insert(SuburbsDistributions.all.inventorymale.items, 0.15 * spawnRate)
+    table.insert(SuburbsDistributions.all.inventorymale.items, 1 * spawnRate)
     
-    -- Outfit_Student - Booster packs (4.5)
-    table.insert(SuburbsDistributions.Outfit_Student.items, "mtgcards.booster_pack_beta")
-    table.insert(SuburbsDistributions.Outfit_Student.items, 4.5 * spawnRate)
     
     -- BEDROOMS
-    -- WardrobeChild - Booster packs (medium=5), Starter decks (small=1)
+    -- WardrobeChild - Booster packs (high=10), Starter decks (medium=5)
     table.insert(ProceduralDistributions.list["WardrobeChild"].items, "mtgcards.booster_pack_beta")
-    table.insert(ProceduralDistributions.list["WardrobeChild"].items, 5 * spawnRate)
+    table.insert(ProceduralDistributions.list["WardrobeChild"].items, 10 * spawnRate)
     table.insert(ProceduralDistributions.list["WardrobeChild"].items, "mtgcards.starter_deck_beta")
-    table.insert(ProceduralDistributions.list["WardrobeChild"].items, 1 * spawnRate)
+    table.insert(ProceduralDistributions.list["WardrobeChild"].items, 5 * spawnRate)
     
-    -- WardrobeGeneric - Booster packs (small=1), Starter decks (very small=0.1)
+    -- WardrobeGeneric - Booster packs (medium=5), Starter decks (small=1)
     table.insert(ProceduralDistributions.list["WardrobeGeneric"].items, "mtgcards.booster_pack_beta")
-    table.insert(ProceduralDistributions.list["WardrobeGeneric"].items, 1 * spawnRate)
+    table.insert(ProceduralDistributions.list["WardrobeGeneric"].items, 5 * spawnRate)
     table.insert(ProceduralDistributions.list["WardrobeGeneric"].items, "mtgcards.starter_deck_beta")
-    table.insert(ProceduralDistributions.list["WardrobeGeneric"].items, 0.1 * spawnRate)
+    table.insert(ProceduralDistributions.list["WardrobeGeneric"].items, 1 * spawnRate)
     
-    -- BedroomDresser - Booster packs (very small=0.1)
+    -- BedroomDresser - Booster packs (small=1)
     table.insert(ProceduralDistributions.list["BedroomDresser"].items, "mtgcards.booster_pack_beta")
-    table.insert(ProceduralDistributions.list["BedroomDresser"].items, 0.1 * spawnRate)
+    table.insert(ProceduralDistributions.list["BedroomDresser"].items, 1 * spawnRate)
     
-    -- BedroomDresserChild - Booster packs (medium=5), Starter decks (small=1)
+    -- BedroomDresserChild - Booster packs (high=10), Starter decks (medium=5)
     table.insert(ProceduralDistributions.list["BedroomDresserChild"].items, "mtgcards.booster_pack_beta")
-    table.insert(ProceduralDistributions.list["BedroomDresserChild"].items, 5 * spawnRate)
+    table.insert(ProceduralDistributions.list["BedroomDresserChild"].items, 10 * spawnRate)
     table.insert(ProceduralDistributions.list["BedroomDresserChild"].items, "mtgcards.starter_deck_beta")
-    table.insert(ProceduralDistributions.list["BedroomDresserChild"].items, 1 * spawnRate)
+    table.insert(ProceduralDistributions.list["BedroomDresserChild"].items, 5 * spawnRate)
     
-    -- BedroomSidetable - Booster packs (small=1), Starter decks (very small=0.1)
+    -- BedroomSidetable - Booster packs (medium=5), Starter decks (small=1)
     table.insert(ProceduralDistributions.list["BedroomSidetable"].items, "mtgcards.booster_pack_beta")
-    table.insert(ProceduralDistributions.list["BedroomSidetable"].items, 1 * spawnRate)
+    table.insert(ProceduralDistributions.list["BedroomSidetable"].items, 5 * spawnRate)
     table.insert(ProceduralDistributions.list["BedroomSidetable"].items, "mtgcards.starter_deck_beta")
-    table.insert(ProceduralDistributions.list["BedroomSidetable"].items, 0.1 * spawnRate)
+    table.insert(ProceduralDistributions.list["BedroomSidetable"].items, 1 * spawnRate)
     
-    -- BedroomSidetableChild - Booster packs (medium=5), Starter decks (small=1)
+    -- BedroomSidetableChild - Booster packs (high=10), Starter decks (medium=5)
     table.insert(ProceduralDistributions.list["BedroomSidetableChild"].items, "mtgcards.booster_pack_beta")
-    table.insert(ProceduralDistributions.list["BedroomSidetableChild"].items, 5 * spawnRate)
+    table.insert(ProceduralDistributions.list["BedroomSidetableChild"].items, 10 * spawnRate)
     table.insert(ProceduralDistributions.list["BedroomSidetableChild"].items, "mtgcards.starter_deck_beta")
-    table.insert(ProceduralDistributions.list["BedroomSidetableChild"].items, 1 * spawnRate)
+    table.insert(ProceduralDistributions.list["BedroomSidetableChild"].items, 5 * spawnRate)
     
     -- RESIDENTIAL BOOKSHELVES
-    -- LivingRoomShelf - Empty binders (very rare - 0.05)
-    table.insert(ProceduralDistributions.list["LivingRoomShelf"].items, function() return getRandomEmptyBinder() end)
-    table.insert(ProceduralDistributions.list["LivingRoomShelf"].items, 0.05 * spawnRate)
+    -- LivingRoomShelf - Empty binders (rare)
+    table.insert(ProceduralDistributions.list["LivingRoomShelf"].items, "mtgcards.complete_set_binder")
+    table.insert(ProceduralDistributions.list["LivingRoomShelf"].items, 0.5 * spawnRate)
+    table.insert(ProceduralDistributions.list["LivingRoomShelf"].items, "mtgcards.power_nine_binder")
+    table.insert(ProceduralDistributions.list["LivingRoomShelf"].items, 0.5 * spawnRate)
+    table.insert(ProceduralDistributions.list["LivingRoomShelf"].items, "mtgcards.land_binder")
+    table.insert(ProceduralDistributions.list["LivingRoomShelf"].items, 0.5 * spawnRate)
     
-    -- LivingRoomShelfNoTapes - Empty binders (very rare - 0.05)  
-    table.insert(ProceduralDistributions.list["LivingRoomShelfNoTapes"].items, function() return getRandomEmptyBinder() end)
-    table.insert(ProceduralDistributions.list["LivingRoomShelfNoTapes"].items, 0.05 * spawnRate)
+    -- LivingRoomShelfNoTapes - Empty binders (rare)  
+    table.insert(ProceduralDistributions.list["LivingRoomShelfNoTapes"].items, "mtgcards.complete_set_binder")
+    table.insert(ProceduralDistributions.list["LivingRoomShelfNoTapes"].items, 0.5 * spawnRate)
+    table.insert(ProceduralDistributions.list["LivingRoomShelfNoTapes"].items, "mtgcards.power_nine_binder")
+    table.insert(ProceduralDistributions.list["LivingRoomShelfNoTapes"].items, 0.5 * spawnRate)
+    table.insert(ProceduralDistributions.list["LivingRoomShelfNoTapes"].items, "mtgcards.land_binder")
+    table.insert(ProceduralDistributions.list["LivingRoomShelfNoTapes"].items, 0.5 * spawnRate)
 end
 
--- Initialize spawning when distributions are ready
-Events.OnPostDistributionMerge.Add(addMTGSpawns)
+-- Initialize spawning directly
+addMTGSpawns()

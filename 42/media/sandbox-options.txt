@@ -1,6 +1,1 @@
 VERSION = 1,
-option MTG.SpawnRate
-{
-	type = double, default = 1.0, min = 0.0, max = 10.0,
-	page = MTG, translation = MTG_SpawnRate,
-}

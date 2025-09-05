@@ -63,16 +63,16 @@ item power_nine_binder
     PutInSound=PutItemInBag,
 }
 
-item LandBinder
+item land_binder
 {
     DisplayCategory=MTG Binder,
     DisplayName=MTG Land Binder,
     Capacity=5,
     WeightReduction=90,
-    Icon=LandBinder,
+    Icon=land_binder,
     Weight=0.2,
     Type=Container,
-    WorldStaticModel=LandBinder,
+    WorldStaticModel=land_binder,
     AcceptItemFunction=MTG_AcceptItemFunction.acceptMTGCards,
     OpenSound=OpenBag,
     CloseSound=CloseBag,
